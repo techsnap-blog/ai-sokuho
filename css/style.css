@@ -304,6 +304,7 @@ img.logo.logo-on-dark { background: var(--logo-plate-dark); }
   background: var(--accent); color: var(--accent-ink); font-weight: 600; cursor: pointer;
 }
 .btn-action.ghost { background: none; color: var(--accent); }
+a.btn-action { display: inline-flex; align-items: center; text-decoration: none; }
 .btn-action.is-on { background: var(--surface-2); color: var(--text); border-color: var(--border); }
 .btn-action.ghost.is-on { background: var(--surface-2); color: var(--text); }
 
