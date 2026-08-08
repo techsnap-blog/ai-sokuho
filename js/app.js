@@ -56,7 +56,7 @@ ${logoHTML(s.logo, s.name, s.logo_bg)}
     if (clear) clear.addEventListener("click", (e) => { e.preventDefault(); localStorage.setItem(key("lastVisit"), new Date().toISOString()); sa.hidden = true; });
   }
 
-  // --- Home: 最新 で My AI のAI記事を先頭＋強調（localStorageのみ） ---
+  // --- Home: 最新 で My AI のAI記事を末尾＋強調（localStorageのみ） ---
   const latest = document.getElementById("latest-list");
   if (latest) {
     const mine = getArr("myai");
@@ -67,9 +67,9 @@ ${logoHTML(s.logo, s.name, s.logo_bg)}
         .slice(0, 6);
       if (!mineArticles.length) return;
       const mineSlugs = new Set(mineArticles.map((a) => a.slug));
-      // サーバー描画済みの同記事は除いて先頭に挿し直す（重複防止）
+      // サーバー描画済みの同記事は除いて末尾に挿し直す（重複防止）
       latest.querySelectorAll(".card[data-slug]").forEach((c) => { if (mineSlugs.has(c.dataset.slug)) c.remove(); });
-      latest.insertAdjacentHTML("afterbegin", mineArticles.map((a) => cardHTML(a, true)).join(""));
+      latest.insertAdjacentHTML("beforeend", mineArticles.map((a) => cardHTML(a, true)).join(""));
     });
   }
 
