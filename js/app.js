@@ -25,9 +25,9 @@
     ? `<img class="logo${bg === "dark" ? " logo-on-dark" : ""}" src="${root}${esc(thumb)}" alt="" loading="lazy" width="40" height="40">`
     : `<span class="logo logo-fallback" aria-hidden="true">${esc((name || "?").trim().charAt(0).toUpperCase())}</span>`;
 
-  const cardHTML = (a) => `<a class="card" href="${root}articles/${esc(a.slug)}.html">
+  const cardHTML = (a, mine) => `<a class="card${mine ? " is-mine" : ""}" data-slug="${esc(a.slug)}" data-service="${esc(a.service_slug)}" href="${root}articles/${esc(a.slug)}.html">
 <span class="thumb-wrap">${logoHTML(a.thumb, a.service_name, a.thumb_bg)}</span>
-<span><span class="meta"><span>${esc(a.service_name)}</span><span class="badge">${esc(a.article_type || "UPDATE")}</span><span>${esc(a.published_at || "")}</span></span>
+<span><span class="meta">${mine ? '<span class="badge mine-pill">My AI</span>' : ""}<span>${esc(a.service_name)}</span><span class="badge">${esc(a.article_type || "UPDATE")}</span><span>${esc(a.published_at || "")}</span></span>
 <span class="card-title">${esc(a.title)}</span></span></a>`;
 
   const serviceHTML = (s, extra) => `<a class="ai-item" href="${root}ai/${esc(s.slug)}.html">
@@ -54,6 +54,23 @@ ${logoHTML(s.logo, s.name, s.logo_bg)}
     });
     const clear = document.getElementById("sa-clear");
     if (clear) clear.addEventListener("click", (e) => { e.preventDefault(); localStorage.setItem(key("lastVisit"), new Date().toISOString()); sa.hidden = true; });
+  }
+
+  // --- Home: 最新 で My AI のAI記事を先頭＋強調（localStorageのみ） ---
+  const latest = document.getElementById("latest-list");
+  if (latest) {
+    const mine = getArr("myai");
+    if (mine.length) load("articles").then(({ articles }) => {
+      const mineArticles = articles
+        .filter((a) => mine.includes(a.service_slug))
+        .sort((a, b) => (b.updated_at || b.published_at || "").localeCompare(a.updated_at || a.published_at || ""))
+        .slice(0, 6);
+      if (!mineArticles.length) return;
+      const mineSlugs = new Set(mineArticles.map((a) => a.slug));
+      // サーバー描画済みの同記事は除いて先頭に挿し直す（重複防止）
+      latest.querySelectorAll(".card[data-slug]").forEach((c) => { if (mineSlugs.has(c.dataset.slug)) c.remove(); });
+      latest.insertAdjacentHTML("afterbegin", mineArticles.map((a) => cardHTML(a, true)).join(""));
+    });
   }
 
   // --- My AI page ---

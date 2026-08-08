@@ -175,6 +175,16 @@ main {
   color: var(--text-muted);
 }
 .badge.breaking { color: var(--danger); border-color: var(--danger); }
+.badge.mine-pill { color: var(--accent-ink); background: var(--accent); border-color: var(--accent); }
+
+/* My AI のAI記事を新着で静かに強調（左アクセント＋淡い下地） */
+.card.is-mine {
+  border-left: 3px solid var(--accent);
+  border-bottom-color: transparent;
+  padding: var(--sp-3);
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+}
 
 /* placeholder注記 */
 .placeholder-note {
