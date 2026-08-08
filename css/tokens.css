@@ -46,13 +46,11 @@
   /* Layout */
   --content-max: 720px;       /* Desktopで本文が横に伸びすぎない上限 */
   --header-h: 56px;
-  --bottomnav-h: 60px;
   --tap-min: 44px;            /* タップ領域の最小 */
 
   /* Z-index Layer System (場当たりz-index禁止) */
   --z-content: 0;
   --z-sticky: 100;
-  --z-nav: 200;
   --z-overlay: 300;
   --z-modal: 400;
   --z-toast: 500;

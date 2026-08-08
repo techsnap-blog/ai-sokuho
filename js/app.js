@@ -1,5 +1,5 @@
 // L5 client-side personalization + search (localStorage only, no backend).
-// State: sokuho.myai / sokuho.installed / sokuho.saved (slug arrays), sokuho.lastVisit (ISO).
+// State: sokuho.myai / sokuho.saved (slug arrays), sokuho.lastVisit (ISO).
 (() => {
   const root = document.body.dataset.root || "";
 
@@ -102,11 +102,11 @@ ${logoHTML(s.logo, s.name, s.logo_bg)}
   // --- My AI page ---
   const myaiList = document.getElementById("myai-list");
   if (myaiList) load("services").then((services) => {
-    const mine = getArr("myai"), installed = getArr("installed");
+    const mine = getArr("myai");
     const list = services.filter((s) => mine.includes(s.slug));
     if (!list.length) return;
     document.getElementById("myai-empty").hidden = true;
-    myaiList.innerHTML = list.map((s) => serviceHTML(s, installed.includes(s.slug) ? "導入済み" : "")).join("");
+    myaiList.innerHTML = list.map((s) => serviceHTML(s)).join("");
   });
 
   // --- Saved page ---
