@@ -310,6 +310,8 @@ a.btn-action { display: inline-flex; align-items: center; text-decoration: none;
   background: none; color: var(--text-muted); font-size: var(--fs-sm); font-weight: 600; cursor: pointer;
 }
 .btn-save.is-on { color: var(--accent); border-color: var(--accent); }
+.article-actions { display: flex; gap: var(--sp-2); flex-wrap: wrap; margin-top: var(--sp-3); }
+.article-actions .btn-save { margin-top: 0; }
 
 /* ---- 検索入力 ---- */
 .search-input {

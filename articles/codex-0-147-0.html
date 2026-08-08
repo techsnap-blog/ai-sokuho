@@ -18,8 +18,8 @@
 <link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/codex-0-147-0.html">
 <meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/codex-0-147-0.html">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"OpenAI Codex CLI 0.147.0：拡張機能の強化と自動承認を追加、「全おまかせ実行」は廃止","datePublished":"2026-08-07","dateModified":"2026-08-07","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/codex-0-147-0.html"}</script>
-<link rel="stylesheet" href="../css/tokens.css?v=340ce5cc">
-<link rel="stylesheet" href="../css/style.css?v=340ce5cc">
+<link rel="stylesheet" href="../css/tokens.css?v=8ef7ef34">
+<link rel="stylesheet" href="../css/style.css?v=8ef7ef34">
 </head>
 <body data-root="../">
 <header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
@@ -27,13 +27,13 @@
 <article class="section article">
 <div class="article-meta"><a href="../ai/codex.html">Codex</a><span class="badge breaking">重要な変更</span><span>2026-08-07</span></div>
 <h1 class="article-title">OpenAI Codex CLI 0.147.0：拡張機能の強化と自動承認を追加、「全おまかせ実行」は廃止</h1>
-<button class="btn-save" type="button" data-toggle data-key="saved" data-id="codex-0-147-0" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="codex" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="codex-0-147-0" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
 <section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li>拡張機能（プラグイン）を、<mark class="hl">ネット上のカタログから探して入れられるように</mark>。自分のPC・個人・チーム・ネット上をまたいで検索できる</li><li>AIの操作を<mark class="hl">毎回手で承認しなくても、自動でチェックして進める</mark> `--approve-for-me` を追加</li><li>昔からあった `codex exec --full-auto`（全部おまかせ実行）は<mark class="hl">廃止</mark>。これを使っていた自動化の設定は<mark class="hl">書き換えが必要</mark></li></ul></section>
 <section class="article-block"><h2>何が変わった</h2><p>今回の目玉は拡張機能（プラグイン）まわりです。<mark class="hl">自分のPCの中だけでなく、個人・チーム・ネット上のカタログまでまとめて探して入れられるように</mark>なりました。作業を進めるときの「承認」も、`--approve-for-me` を付ければ<mark class="hl">毎回手で押さなくても自動でチェックして進められます</mark>。ほかに、AIが外部ツールとやり取りする共通ルール（MCP）の新版に対応したほか、Cursorという別のツールで作った設定を取り込んで、ClaudeやCursorとの会話を重複なく同期する機能、Amazon Bedrock（AWSのAI基盤）向けの改善も入りました。不具合の修正も多く、画面に出すコマンドや履歴からパスワード類を隠す、日本語や絵文字の表示崩れ、Windowsでの動作不良などが直っています。一方で、以前から「非推奨（いずれ廃止）」とされていた `codex exec --full-auto`（確認なしで全部おまかせ実行するオプション）は<mark class="hl">削除されました</mark>。これを自動化スクリプトで使っている場合は、<mark class="hl">更新前に別の書き方へ置き換える必要があります</mark>。料金への影響は公式には書かれていません。</p></section>
 <section class="article-block"><h2>誰に関係する</h2><p>Codex（コーディング支援のCLIツール）を使う人に広く関係します。とくに拡張機能を使う人、Cursorや Claudeと一緒に使っている人、AWSのBedrockで動かしている人、日本語の表示崩れに困っていた人にはうれしい更新です。`codex exec --full-auto` を自動化の中で使っているなら、<mark class="hl">更新前に置き換えを確認してください</mark>。</p></section>
 <section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://github.com/openai/codex/releases/tag/rust-v0.147.0" target="_blank" rel="noopener">リリースノート（GitHub） ↗</a></p></section>
 </article>
 </main>
-<script src="../js/app.js?v=340ce5cc" defer></script>
+<script src="../js/app.js?v=8ef7ef34" defer></script>
 </body>
 </html>
