@@ -56,13 +56,6 @@ ${logoHTML(s.logo, s.name, s.logo_bg)}
     if (clear) clear.addEventListener("click", (e) => { e.preventDefault(); localStorage.setItem(key("lastVisit"), new Date().toISOString()); sa.hidden = true; });
   }
 
-  // --- Home: 最新の「もっと見る」（初期5件表示、押すと全件展開） ---
-  const latestMore = document.getElementById("latest-more");
-  if (latestMore) latestMore.addEventListener("click", () => {
-    document.getElementById("latest-list")?.classList.remove("is-collapsed");
-    latestMore.remove();
-  });
-
   // --- Home: My AIの最新記事（登録AIの記事を最大5件。未登録なら非表示・もっと見るなし） ---
   const homeMyai = document.getElementById("home-myai");
   if (homeMyai) {
