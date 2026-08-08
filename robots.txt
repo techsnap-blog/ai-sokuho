@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://techsnap-blog.github.io/ai-sokuho/sitemap.xml
