@@ -1,0 +1,19 @@
+{
+  "name": "AI速報まとめ",
+  "short_name": "AI速報まとめ",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#171513",
+  "theme_color": "#171513",
+  "description": "AIの最新情報を、用途から探せる。",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OpenAI Codex CLI 0.147.0：拡張機能の強化と自動承認を追加、「全おまかせ実行」は廃止 — AI速報まとめ</title>
+<meta name="description" content="拡張機能をネット上のカタログから入れられるように、承認を自動で進める機能を追加。非推奨だった「全おまかせ実行」オプションは廃止。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="OpenAI Codex CLI 0.147.0：拡張機能の強化と自動承認を追加、「全おまかせ実行」は廃止 — AI速報まとめ">
+<meta property="og:description" content="拡張機能をネット上のカタログから入れられるように、承認を自動で進める機能を追加。非推奨だった「全おまかせ実行」オプションは廃止。">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"OpenAI Codex CLI 0.147.0：拡張機能の強化と自動承認を追加、「全おまかせ実行」は廃止","datePublished":"2026-08-07","dateModified":"2026-08-07","publisher":{"@type":"Organization","name":"AI速報まとめ"}}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=3b7a2ce0">
+<link rel="stylesheet" href="../css/style.css?v=3b7a2ce0">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="header-btn back" href="../ai/codex.html" aria-label="戻る"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></a><span class="brand">Codex</span><a class="header-btn" href="../search.html" aria-label="検索"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/codex.html">Codex</a><span class="badge breaking">重要な変更</span><span>2026-08-07</span></div>
+<h1 class="article-title">OpenAI Codex CLI 0.147.0：拡張機能の強化と自動承認を追加、「全おまかせ実行」は廃止</h1>
+<button class="btn-save" type="button" data-toggle data-key="saved" data-id="codex-0-147-0" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li>拡張機能（プラグイン）を、<mark class="hl">ネット上のカタログから探して入れられるように</mark>。自分のPC・個人・チーム・ネット上をまたいで検索できる</li><li>AIの操作を<mark class="hl">毎回手で承認しなくても、自動でチェックして進める</mark> `--approve-for-me` を追加</li><li>昔からあった `codex exec --full-auto`（全部おまかせ実行）は<mark class="hl">廃止</mark>。これを使っていた自動化の設定は<mark class="hl">書き換えが必要</mark></li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>今回の目玉は拡張機能（プラグイン）まわりです。<mark class="hl">自分のPCの中だけでなく、個人・チーム・ネット上のカタログまでまとめて探して入れられるように</mark>なりました。作業を進めるときの「承認」も、`--approve-for-me` を付ければ<mark class="hl">毎回手で押さなくても自動でチェックして進められます</mark>。ほかに、AIが外部ツールとやり取りする共通ルール（MCP）の新版に対応したほか、Cursorという別のツールで作った設定を取り込んで、ClaudeやCursorとの会話を重複なく同期する機能、Amazon Bedrock（AWSのAI基盤）向けの改善も入りました。不具合の修正も多く、画面に出すコマンドや履歴からパスワード類を隠す、日本語や絵文字の表示崩れ、Windowsでの動作不良などが直っています。一方で、以前から「非推奨（いずれ廃止）」とされていた `codex exec --full-auto`（確認なしで全部おまかせ実行するオプション）は<mark class="hl">削除されました</mark>。これを自動化スクリプトで使っている場合は、<mark class="hl">更新前に別の書き方へ置き換える必要があります</mark>。料金への影響は公式には書かれていません。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p>Codex（コーディング支援のCLIツール）を使う人に広く関係します。とくに拡張機能を使う人、Cursorや Claudeと一緒に使っている人、AWSのBedrockで動かしている人、日本語の表示崩れに困っていた人にはうれしい更新です。`codex exec --full-auto` を自動化の中で使っているなら、<mark class="hl">更新前に置き換えを確認してください</mark>。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://github.com/openai/codex/releases/tag/rust-v0.147.0" target="_blank" rel="noopener">リリースノート（GitHub） ↗</a></p></section>
+</article>
+</main>
+<nav class="bottom-nav" aria-label="メインナビ"><a href="../index.html" aria-current="page"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>ホーム</a><a href="../saved.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>保存</a><a href="../my-ai.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 12 0v1"/></svg>My AI</a></nav>
+<script src="../js/app.js?v=3b7a2ce0" defer></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* Design Tokens — 色・タイポ・余白・角丸・境界・影・Z-index・Breakpoint の唯一の正。
+   Componentへ色コードを直書きしない（Spec 04 §95/§141）。light/dark両対応。 */
+:root {
+  color-scheme: dark;            /* PC準拠のダーク基調で統一（端末のlight設定に追従しない） */
+  /* Color — ダーク基調で固定（warm neutral・PC版に合わせて全端末共通） */
+  --bg: #171513;
+  --surface: #201D1A;
+  --surface-2: #262220;
+  --text: #ECE7E1;
+  --text-muted: #A8A099;
+  --border: rgba(236, 231, 225, 0.14);
+  --accent: #5FB5AD;            /* calm teal — 控えめなAccent */
+  --accent-ink: #10201E;
+  --logo-plate: #FFFFFF;        /* ロゴ画像の下地。暗色ロゴを見せるため常に白 */
+  --logo-plate-dark: #16130F;   /* 白抜きロゴ用の下地（logo_bg:dark のサービス） */
+  --hl: rgba(240, 200, 70, 0.32);  /* 重要な変更点の蛍光マーカー（まぶしすぎない） */
+  --success: #6FCF97;
+  --warning: #E0A252;
+  --danger: #E0776B;            /* Breaking Change等。赤一色で煽らない */
+
+  /* Typography */
+  --font-sans: system-ui, -apple-system, "Hiragino Kaku Gothic ProN",
+    "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  --fs-body: 16px;             /* 本文は16px未満にしない */
+  --fs-sm: 13px;
+  --fs-lg: 18px;
+  --fs-title: clamp(1.35rem, 5vw, 1.75rem);
+  --lh-body: 1.7;
+  --lh-tight: 1.35;
+
+  /* Spacing (4px base) */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;   /* 画面左右の基本余白 */
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-8: 48px;
+
+  /* Radius / Border / Shadow (控えめ) */
+  --radius: 10px;
+  --radius-sm: 6px;
+  --border-w: 1px;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3);
+
+  /* Layout */
+  --content-max: 720px;       /* Desktopで本文が横に伸びすぎない上限 */
+  --header-h: 56px;
+  --bottomnav-h: 60px;
+  --tap-min: 44px;            /* タップ領域の最小 */
+
+  /* Z-index Layer System (場当たりz-index禁止) */
+  --z-content: 0;
+  --z-sticky: 100;
+  --z-nav: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+
+  /* Breakpoints (参考値。実CSSはコンテンツ基準のmin-widthで書く) */
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+}
+/* ダーク基調で全端末統一（PC版準拠）。端末のlight/dark設定には追従しない方針。 */

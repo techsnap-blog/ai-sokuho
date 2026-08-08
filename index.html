@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI速報まとめ — 用途から探すAIニュース</title>
+<meta name="description" content="AIの最新情報を、用途から探せる。重要な変化だけを短時間で。">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="AI速報まとめ — 用途から探すAIニュース">
+<meta property="og:description" content="AIの最新情報を、用途から探せる。重要な変化だけを短時間で。">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"AI速報まとめ"}</script>
+<link rel="stylesheet" href="css/tokens.css?v=3b7a2ce0">
+<link rel="stylesheet" href="css/style.css?v=3b7a2ce0">
+</head>
+<body data-root="">
+<header class="site-header"><a class="brand" href="index.html">AI速報まとめ</a><a class="header-btn" href="search.html" aria-label="検索"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></a></header>
+<main class="wrap">
+
+<section class="hero" aria-labelledby="page-h">
+<h1 id="page-h" class="hero-title"><img class="hero-img" src="assets/header.webp" alt="AI速報まとめ" width="2064" height="512"></h1>
+<p class="hero-sub">AIの最新情報をカテゴリ別にまとめてます</p>
+</section>
+<section class="section" id="since-away" hidden aria-labelledby="sa-h">
+<div class="section-head"><h2 id="sa-h">前回からの更新</h2><a class="more" href="#" id="sa-clear">既読にする</a></div>
+<div class="sa-list card-list"></div>
+</section>
+<section class="section" aria-labelledby="cat-h">
+<div class="section-head"><h2 id="cat-h">用途から探す</h2></div>
+<nav class="cat-grid" aria-label="用途カテゴリ"><a class="cat-card" href="categories/chat-writing.html">チャット・文章</a><a class="cat-card" href="categories/coding.html">コーディング</a><a class="cat-card" href="categories/image.html">画像生成</a><a class="cat-card" href="categories/video.html">動画生成</a><a class="cat-card" href="categories/music-audio.html">音楽・音声</a><a class="cat-card" href="categories/api-platform.html">API・開発基盤</a></nav>
+</section>
+<section class="section" aria-label="検索">
+<form class="home-search" action="search.html" method="get" role="search">
+<svg class="home-search-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+<input class="search-input" type="search" name="q" placeholder="キーワードで検索（AI名・記事）" aria-label="キーワードで検索">
+</form>
+</section>
+<section class="section" aria-labelledby="latest-h">
+<div class="section-head"><h2 id="latest-h">最新</h2></div>
+<a class="card" href="articles/claude-code-v2-1-224.html">
+<span class="thumb-wrap"><img class="logo" src="assets/logos/claude-code.svg" alt="Claude Codeのロゴ" loading="lazy" width="40" height="40"></span>
+<span><span class="meta"><span>Claude Code</span><span class="badge">release</span><span>2026-08-07</span></span>
+<span class="card-title">Claude Code v2.1.224：自前のPCで動かす機能とAI同士のメッセージ連携を追加</span></span></a>
+<a class="card" href="articles/codex-0-147-0.html">
+<span class="thumb-wrap"><img class="logo logo-on-dark" src="assets/logos/codex.webp" alt="Codexのロゴ" loading="lazy" width="40" height="40"></span>
+<span><span class="meta"><span>Codex</span><span class="badge breaking">重要な変更</span><span>2026-08-07</span></span>
+<span class="card-title">OpenAI Codex CLI 0.147.0：拡張機能の強化と自動承認を追加、「全おまかせ実行」は廃止</span></span></a>
+<a class="card" href="articles/claude-code-v2-1-223.html">
+<span class="thumb-wrap"><img class="logo" src="assets/logos/claude-code.svg" alt="Claude Codeのロゴ" loading="lazy" width="40" height="40"></span>
+<span><span class="meta"><span>Claude Code</span><span class="badge">update</span><span>2026-08-06</span></span>
+<span class="card-title">Claude Code v2.1.223：セキュリティ修正が中心、/review が /code-review に統合</span></span></a>
+<a class="card" href="articles/claude-skill-plugin-security-scan.html">
+<span class="thumb-wrap"><img class="logo" src="assets/logos/claude.svg" alt="Claudeのロゴ" loading="lazy" width="40" height="40"></span>
+<span><span class="meta"><span>Claude</span><span class="badge">new_feature</span><span>2026-08-06</span></span>
+<span class="card-title">Claude、拡張機能の安全性を自動チェックする機能を追加（企業向け・お試し版）</span></span></a>
+<a class="card" href="articles/github-spark-deprecation.html">
+<span class="thumb-wrap"><img class="logo" src="assets/logos/github-copilot.svg" alt="GitHub Copilotのロゴ" loading="lazy" width="40" height="40"></span>
+<span><span class="meta"><span>GitHub Copilot</span><span class="badge breaking">重要な変更</span><span>2026-08-04</span></span>
+<span class="card-title">GitHub Spark が提供終了へ。8月31日までにアプリの書き出しが必要</span></span></a>
+</section>
+</main>
+<nav class="bottom-nav" aria-label="メインナビ"><a href="index.html" aria-current="page"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>ホーム</a><a href="saved.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>保存</a><a href="my-ai.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 12 0v1"/></svg>My AI</a></nav>
+<script src="js/app.js?v=3b7a2ce0" defer></script>
+</body>
+</html>

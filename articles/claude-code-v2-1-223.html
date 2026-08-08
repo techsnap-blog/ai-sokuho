@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Claude Code v2.1.223：セキュリティ修正が中心、/review が /code-review に統合 — AI速報まとめ</title>
+<meta name="description" content="権限チェックのすり抜けやサンドボックス回避などのセキュリティ修正が中心のリリース。コマンド /review は /code-review にまとめられた。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="Claude Code v2.1.223：セキュリティ修正が中心、/review が /code-review に統合 — AI速報まとめ">
+<meta property="og:description" content="権限チェックのすり抜けやサンドボックス回避などのセキュリティ修正が中心のリリース。コマンド /review は /code-review にまとめられた。">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Claude Code v2.1.223：セキュリティ修正が中心、/review が /code-review に統合","datePublished":"2026-08-06","dateModified":"2026-08-06","publisher":{"@type":"Organization","name":"AI速報まとめ"}}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=3b7a2ce0">
+<link rel="stylesheet" href="../css/style.css?v=3b7a2ce0">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="header-btn back" href="../ai/claude-code.html" aria-label="戻る"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></a><span class="brand">Claude Code</span><a class="header-btn" href="../search.html" aria-label="検索"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/claude-code.html">Claude Code</a><span class="badge">update</span><span>2026-08-06</span></div>
+<h1 class="article-title">Claude Code v2.1.223：セキュリティ修正が中心、/review が /code-review に統合</h1>
+<button class="btn-save" type="button" data-toggle data-key="saved" data-id="claude-code-v2-1-223" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li><mark class="hl">悪意ある操作を防ぐためのセキュリティ修正</mark>が中心。承認画面をだましてコマンドの一部を隠す手口などをふさいだ</li><li>コマンド <mark class="hl">`/review` が `/code-review` に統合</mark>（今の変更点やプルリクエストをレビューする機能）</li><li>クラウドで動かしていた作業を<mark class="hl">手元のPCで続ける `/teleport` のヒント表示</mark>を追加</li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>今回はセキュリティと不具合の修正がメインです。とくに、<mark class="hl">承認をうながす画面をだまして、実行するコマンドの一部を隠せてしまう問題</mark>（タブや目に見えない文字を使う手口）や、<mark class="hl">本来なら制限された領域（サンドボックス）の外でコードを動かせてしまう問題</mark>が直りました。使い勝手の面では、コマンドの `/review` が `/code-review`（今の変更やプルリクエストをレビューする機能）に一本化され、クラウド上のセッションを手元のPCで続けるための `/teleport` の案内も出るようになりました。ほかにも、組織の管理設定まわりの調整や細かなバグ修正が多数入っています。料金への影響は記載されていません。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p><mark class="hl">Claude Codeを使っている開発者は、セキュリティ修正のため更新しておくのがおすすめ</mark>です。とくに会社などチームで使っている場合は、管理設定の挙動修正も含まれます。`/review` を使っていた人は、今後 `/code-review` に読み替えればOKです。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://github.com/anthropics/claude-code/releases/tag/v2.1.223" target="_blank" rel="noopener">リリースノート（GitHub） ↗</a></p></section>
+</article>
+</main>
+<nav class="bottom-nav" aria-label="メインナビ"><a href="../index.html" aria-current="page"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>ホーム</a><a href="../saved.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>保存</a><a href="../my-ai.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 12 0v1"/></svg>My AI</a></nav>
+<script src="../js/app.js?v=3b7a2ce0" defer></script>
+</body>
+</html>
