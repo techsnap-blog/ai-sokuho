@@ -56,33 +56,24 @@ ${logoHTML(s.logo, s.name, s.logo_bg)}
     if (clear) clear.addEventListener("click", (e) => { e.preventDefault(); localStorage.setItem(key("lastVisit"), new Date().toISOString()); sa.hidden = true; });
   }
 
-  // --- Home: 最新 で My AI のAI記事を末尾＋強調（localStorageのみ） ---
-  const latest = document.getElementById("latest-list");
-  if (latest) {
-    const mine = getArr("myai");
-    if (mine.length) load("articles").then(({ articles }) => {
-      const mineArticles = articles
-        .filter((a) => mine.includes(a.service_slug))
-        .sort((a, b) => (b.updated_at || b.published_at || "").localeCompare(a.updated_at || a.published_at || ""))
-        .slice(0, 6);
-      if (!mineArticles.length) return;
-      const mineSlugs = new Set(mineArticles.map((a) => a.slug));
-      // サーバー描画済みの同記事は除いて末尾に挿し直す（重複防止）
-      latest.querySelectorAll(".card[data-slug]").forEach((c) => { if (mineSlugs.has(c.dataset.slug)) c.remove(); });
-      latest.insertAdjacentHTML("beforeend", mineArticles.map((a) => cardHTML(a, true)).join(""));
-    });
-  }
+  // --- Home: 最新の「もっと見る」（初期5件表示、押すと全件展開） ---
+  const latestMore = document.getElementById("latest-more");
+  if (latestMore) latestMore.addEventListener("click", () => {
+    document.getElementById("latest-list")?.classList.remove("is-collapsed");
+    latestMore.remove();
+  });
 
-  // --- Home: My AI（登録したAIの一覧。最新の後に並べる。未登録なら非表示） ---
+  // --- Home: My AIの最新記事（登録AIの記事を最大5件。未登録なら非表示・もっと見るなし） ---
   const homeMyai = document.getElementById("home-myai");
   if (homeMyai) {
     const mine = getArr("myai");
-    if (mine.length) load("services").then((services) => {
-      const list = services.filter((s) => mine.includes(s.slug));
+    if (mine.length) load("articles").then(({ articles }) => {
+      const list = articles
+        .filter((a) => mine.includes(a.service_slug))
+        .sort((a, b) => (b.updated_at || b.published_at || "").localeCompare(a.updated_at || a.published_at || ""))
+        .slice(0, 5);
       if (!list.length) return;
-      const installed = getArr("installed");
-      document.getElementById("home-myai-list").innerHTML =
-        list.map((s) => serviceHTML(s, installed.includes(s.slug) ? "導入済み" : "")).join("");
+      document.getElementById("home-myai-list").innerHTML = list.map((a) => cardHTML(a, true)).join("");
       homeMyai.hidden = false;
     });
   }
