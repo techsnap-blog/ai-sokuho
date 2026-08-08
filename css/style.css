@@ -305,6 +305,13 @@ img.logo.logo-on-dark { background: var(--logo-plate-dark); }
 }
 .btn-action.ghost { background: none; color: var(--accent); }
 a.btn-action { display: inline-flex; align-items: center; text-decoration: none; }
+.tabs { display: flex; gap: var(--sp-2); border-bottom: var(--border-w) solid var(--border); margin-bottom: var(--sp-4); }
+.tab {
+  min-height: var(--tap-min); padding: 0 var(--sp-4);
+  background: none; border: none; border-bottom: 2px solid transparent; margin-bottom: -1px;
+  color: var(--text-muted); font-weight: 600; cursor: pointer;
+}
+.tab.is-active { color: var(--text); border-bottom-color: var(--accent); }
 .btn-action.is-on { background: var(--surface-2); color: var(--text); border-color: var(--border); }
 .btn-action.ghost.is-on { background: var(--surface-2); color: var(--text); }
 

@@ -56,9 +56,21 @@ ${logoHTML(s.logo, s.name, s.logo_bg)}
     if (clear) clear.addEventListener("click", (e) => { e.preventDefault(); localStorage.setItem(key("lastVisit"), new Date().toISOString()); sa.hidden = true; });
   }
 
-  // --- Home: My AIの最新記事（登録AIの記事を最大5件。未登録なら非表示・もっと見るなし） ---
-  const homeMyai = document.getElementById("home-myai");
-  if (homeMyai) {
+  // --- Home: タブ切り替え（最新 / My AI） ---
+  const tabs = document.querySelectorAll('.tabs [role="tab"]');
+  tabs.forEach((tab) => tab.addEventListener("click", () => {
+    tabs.forEach((t) => {
+      const on = t === tab;
+      t.classList.toggle("is-active", on);
+      t.setAttribute("aria-selected", String(on));
+      const panel = document.getElementById(t.getAttribute("aria-controls"));
+      if (panel) panel.hidden = !on;
+    });
+  }));
+
+  // --- Home: My AIの最新記事（登録AIの記事を最大5件。未登録なら案内文のまま） ---
+  const homeMyaiList = document.getElementById("home-myai-list");
+  if (homeMyaiList) {
     const mine = getArr("myai");
     if (mine.length) load("articles").then(({ articles }) => {
       const list = articles
@@ -66,8 +78,9 @@ ${logoHTML(s.logo, s.name, s.logo_bg)}
         .sort((a, b) => (b.updated_at || b.published_at || "").localeCompare(a.updated_at || a.published_at || ""))
         .slice(0, 5);
       if (!list.length) return;
-      document.getElementById("home-myai-list").innerHTML = list.map((a) => cardHTML(a, true)).join("");
-      homeMyai.hidden = false;
+      homeMyaiList.innerHTML = list.map((a) => cardHTML(a, true)).join("");
+      const empty = document.getElementById("home-myai-empty");
+      if (empty) empty.hidden = true;
     });
   }
 
