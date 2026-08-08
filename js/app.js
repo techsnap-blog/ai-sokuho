@@ -73,6 +73,20 @@ ${logoHTML(s.logo, s.name, s.logo_bg)}
     });
   }
 
+  // --- Home: My AI（登録したAIの一覧。最新の後に並べる。未登録なら非表示） ---
+  const homeMyai = document.getElementById("home-myai");
+  if (homeMyai) {
+    const mine = getArr("myai");
+    if (mine.length) load("services").then((services) => {
+      const list = services.filter((s) => mine.includes(s.slug));
+      if (!list.length) return;
+      const installed = getArr("installed");
+      document.getElementById("home-myai-list").innerHTML =
+        list.map((s) => serviceHTML(s, installed.includes(s.slug) ? "導入済み" : "")).join("");
+      homeMyai.hidden = false;
+    });
+  }
+
   // --- My AI page ---
   const myaiList = document.getElementById("myai-list");
   if (myaiList) load("services").then((services) => {
