@@ -129,6 +129,21 @@ main {
 }
 .cat-card:hover { text-decoration: none; border-color: var(--accent); }
 
+/* ---- 姉妹サイトへの相互リンク ---- */
+.cross-link {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  padding: var(--sp-4);
+  background: var(--surface);
+  border: var(--border-w) solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+}
+.cross-link:hover { text-decoration: none; border-color: var(--accent); }
+.cross-link-title { font-size: var(--fs-lg); font-weight: 700; }
+.cross-link-sub { font-size: var(--fs-sm); color: var(--text-muted); }
+
 /* ---- Article Card（左サムネ + 右テキスト。placeholder） ---- */
 .card {
   display: grid;
