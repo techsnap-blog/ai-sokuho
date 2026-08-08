@@ -14,6 +14,7 @@
 ## slug一覧（このファイル名で置けば反映される）
 
 chatgpt / claude / gemini / kimi / grok / perplexity /
+genspark / felo / google-ai-mode /
 claude-code / codex / cursor / github-copilot / windsurf /
 midjourney / adobe-firefly / sora / veo / runway / kling /
 suno / udio / elevenlabs
