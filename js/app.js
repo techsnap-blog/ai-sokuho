@@ -68,19 +68,34 @@ ${logoHTML(s.logo, s.name, s.logo_bg)}
     });
   }));
 
-  // --- Home: My AIの最新記事（登録AIの記事を最大5件。未登録なら案内文のまま） ---
+  // --- Home: My AIの最新記事（登録AIの記事を最大5件。5件超なら「もっと見る」） ---
   const homeMyaiList = document.getElementById("home-myai-list");
   if (homeMyaiList) {
     const mine = getArr("myai");
     if (mine.length) load("articles").then(({ articles }) => {
-      const list = articles
+      const all = articles
         .filter((a) => mine.includes(a.service_slug))
-        .sort((a, b) => (b.updated_at || b.published_at || "").localeCompare(a.updated_at || a.published_at || ""))
-        .slice(0, 5);
-      if (!list.length) return;
-      homeMyaiList.innerHTML = list.map((a) => cardHTML(a, true)).join("");
+        .sort((a, b) => (b.updated_at || b.published_at || "").localeCompare(a.updated_at || a.published_at || ""));
+      if (!all.length) return;
+      homeMyaiList.innerHTML = all.slice(0, 5).map((a) => cardHTML(a, true)).join("");
       const empty = document.getElementById("home-myai-empty");
       if (empty) empty.hidden = true;
+      if (all.length > 5) { const m = document.getElementById("home-myai-more"); if (m) m.hidden = false; }
+    });
+  }
+
+  // --- Home: 保存した記事（保存slugを記事に対応づけ、最大5件。5件超なら「もっと見る」） ---
+  const homeSavedList = document.getElementById("home-saved-list");
+  if (homeSavedList) {
+    const ids = getArr("saved");
+    if (ids.length) load("articles").then(({ articles }) => {
+      const bySlug = Object.fromEntries(articles.map((a) => [a.slug, a]));
+      const all = ids.slice().reverse().map((s) => bySlug[s]).filter(Boolean);
+      if (!all.length) return;
+      homeSavedList.innerHTML = all.slice(0, 5).map((a) => cardHTML(a)).join("");
+      const empty = document.getElementById("home-saved-empty");
+      if (empty) empty.hidden = true;
+      if (all.length > 5) { const m = document.getElementById("home-saved-more"); if (m) m.hidden = false; }
     });
   }
 

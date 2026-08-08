@@ -18,8 +18,8 @@
 <link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/">
 <meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"AI速報まとめ","url":"https://techsnap-blog.github.io/ai-sokuho/"}</script>
-<link rel="stylesheet" href="css/tokens.css?v=5164a500">
-<link rel="stylesheet" href="css/style.css?v=5164a500">
+<link rel="stylesheet" href="css/tokens.css?v=acd15333">
+<link rel="stylesheet" href="css/style.css?v=acd15333">
 </head>
 <body data-root="">
 <header class="site-header"><a class="brand" href="index.html">AI速報まとめ</a></header>
@@ -47,6 +47,7 @@
 <div class="tabs" role="tablist" aria-label="記事の切り替え">
 <button class="tab is-active" role="tab" type="button" id="tab-latest" aria-controls="panel-latest" aria-selected="true">最新</button>
 <button class="tab" role="tab" type="button" id="tab-myai" aria-controls="panel-myai" aria-selected="false">My AI</button>
+<button class="tab" role="tab" type="button" id="tab-saved" aria-controls="panel-saved" aria-selected="false">保存した記事</button>
 </div>
 <div class="tab-panel" role="tabpanel" id="panel-latest" aria-labelledby="tab-latest">
 <div class="card-list" id="latest-list">
@@ -75,6 +76,12 @@
 <div class="tab-panel" role="tabpanel" id="panel-myai" aria-labelledby="tab-myai" hidden>
 <div class="card-list" id="home-myai-list"></div>
 <p class="empty" id="home-myai-empty">My AIに追加したAIの最新記事がここに表示されます。各AIのページで「My AIに追加」を押すと登録できます。</p>
+<a class="load-more" id="home-myai-more" href="my-ai.html" hidden>もっと見る</a>
+</div>
+<div class="tab-panel" role="tabpanel" id="panel-saved" aria-labelledby="tab-saved" hidden>
+<div class="card-list" id="home-saved-list"></div>
+<p class="empty" id="home-saved-empty">保存した記事がここに表示されます。記事ページの「保存」を押すと追加できます。</p>
+<a class="load-more" id="home-saved-more" href="saved.html" hidden>もっと見る</a>
 </div>
 </section>
 <section class="section" aria-label="姉妹サイト">
@@ -84,7 +91,6 @@
 </a>
 </section>
 </main>
-<nav class="bottom-nav" aria-label="メインナビ"><a href="index.html" aria-current="page"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>ホーム</a><a href="saved.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg>保存</a><a href="my-ai.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 12 0v1"/></svg>My AI</a></nav>
-<script src="js/app.js?v=5164a500" defer></script>
+<script src="js/app.js?v=acd15333" defer></script>
 </body>
 </html>
