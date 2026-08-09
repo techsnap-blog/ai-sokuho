@@ -156,7 +156,8 @@ main {
   border-bottom: var(--border-w) solid var(--border);
   color: var(--text);
 }
-.card:hover { text-decoration: none; }
+.card[hidden] { display: none; }
+.card:hover { text-decoration: none; outline: var(--border-w) solid var(--accent); outline-offset: var(--sp-2); border-radius: var(--radius); }
 .card .thumb {
   width: 96px;
   aspect-ratio: 4 / 3;
@@ -255,7 +256,7 @@ img.logo.logo-on-dark { background: var(--logo-plate-dark); }
   border-bottom: var(--border-w) solid var(--border);
   color: var(--text); min-height: var(--tap-min);
 }
-.ai-item:hover { text-decoration: none; }
+.ai-item:hover { text-decoration: none; outline: var(--border-w) solid var(--accent); outline-offset: var(--sp-2); border-radius: var(--radius); }
 .ai-item-body { display: flex; flex-direction: column; }
 .ai-name { font-weight: 600; }
 .ai-sub { font-size: var(--fs-sm); color: var(--text-muted); }
@@ -299,7 +300,7 @@ a.btn-action { display: inline-flex; align-items: center; text-decoration: none;
   border: var(--border-w) solid var(--border); border-radius: var(--radius);
   background: var(--surface); color: var(--text); font-weight: 600; text-decoration: none;
 }
-.load-more:hover { text-decoration: none; }
+.load-more:hover { text-decoration: none; border-color: var(--accent); }
 .btn-action.is-on { background: var(--surface-2); color: var(--text); border-color: var(--border); }
 .btn-action.ghost.is-on { background: var(--surface-2); color: var(--text); }
 

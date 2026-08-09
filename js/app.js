@@ -68,6 +68,20 @@ ${logoHTML(s.logo, s.name, s.logo_bg)}
     });
   }));
 
+  // --- Home: 最新タブ「もっと見る」（初期5件、クリックで+5件ずつ表示） ---
+  const latestList = document.getElementById("latest-list");
+  const latestMore = document.getElementById("latest-more");
+  if (latestList && latestMore) {
+    const cards = [...latestList.children];
+    let shown = Number(latestList.dataset.shown) || 5;
+    const render = () => {
+      cards.forEach((c, i) => { c.hidden = i >= shown; });
+      latestMore.hidden = shown >= cards.length;
+    };
+    render();
+    latestMore.addEventListener("click", () => { shown += 5; render(); });
+  }
+
   // --- Home: My AIの最新記事（登録AIの記事を最大5件。5件超なら「もっと見る」） ---
   const homeMyaiList = document.getElementById("home-myai-list");
   if (homeMyaiList) {
