@@ -348,6 +348,10 @@ a.btn-action { display: inline-flex; align-items: center; text-decoration: none;
   margin: 0 0 var(--sp-2); font-size: var(--fs-lg); line-height: var(--lh-tight);
 }
 .article-block p { margin: 0; }
+.related { border-top: 1px solid var(--border); padding-top: var(--sp-4); }
+.related-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: var(--sp-2); }
+.related-list a { display: block; padding: var(--sp-2) 0; line-height: var(--lh-tight); border-bottom: 1px solid var(--border); }
+.related-list li:last-child a { border-bottom: 0; }
 .tldr { margin: 0; padding-left: 1.15em; display: flex; flex-direction: column; gap: var(--sp-2); }
 .tldr li { line-height: var(--lh-body); }
 /* 重要な変更点の蛍光マーカー（==text==）。読みやすさのため薄め。light/dark両対応 */
