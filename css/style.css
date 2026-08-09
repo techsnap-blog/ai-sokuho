@@ -94,6 +94,26 @@ main {
   margin: 0; font-size: var(--fs-body); line-height: var(--lh-body);
   color: var(--text-muted);
 }
+/* 月間利用者数トップ10（スマホ5×2、PC10列。順位順） */
+.hero-ais-label {
+  margin: 0 0 var(--sp-3); font-size: var(--fs-body); line-height: var(--lh-body);
+  color: var(--text-muted);
+}
+.hero-ais {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--sp-3) var(--sp-2);
+  margin: 0;
+}
+.hero-ai {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  min-width: 0; text-decoration: none; color: var(--text-muted);
+}
+.hero-ai .logo { width: 44px; height: 44px; }
+.hero-ai-name {
+  font-size: var(--fs-sm); line-height: 1.2; text-align: center;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;
+}
+.hero-ai:hover { text-decoration: none; outline: var(--border-w) solid var(--accent); outline-offset: var(--sp-2); border-radius: var(--radius); }
+.hero-ai:hover .hero-ai-name { color: var(--text); }
 
 /* ---- Section ---- */
 .section { margin-top: var(--sp-6); }
@@ -364,4 +384,5 @@ a.btn-action { display: inline-flex; align-items: center; text-decoration: none;
 /* ---- Tablet / Desktop（コンテンツ基準で拡張。情報構造は変えない） ---- */
 @media (min-width: 768px) {
   .cat-grid { grid-template-columns: repeat(3, 1fr); }
+  .hero-ais { grid-template-columns: repeat(10, 1fr); }
 }
