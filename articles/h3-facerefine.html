@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319077760187072" crossorigin="anonymous"></script>
+<title>Hailuo H3で小さく崩れた顔を直すComfyUI拡張「ComfyUI-H3-FaceRefine」 — AI速報まとめ</title>
+<meta name="description" content="Hailuo AIの動画モデル「H3」は、顔が画面に小さく映るとき崩れやすい弱点がある。[ComfyUI-H3-FaceRefine](https://github.com/Carasibana/ComfyUI-H3-FaceRefine)は==フレームごとに顔を見つけて拡大し、H3で描き直して元の位置に戻す==ことで顔だけをきれいにする。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="Hailuo H3で小さく崩れた顔を直すComfyUI拡張「ComfyUI-H3-FaceRefine」 — AI速報まとめ">
+<meta property="og:description" content="Hailuo AIの動画モデル「H3」は、顔が画面に小さく映るとき崩れやすい弱点がある。[ComfyUI-H3-FaceRefine](https://github.com/Carasibana/ComfyUI-H3-FaceRefine)は==フレームごとに顔を見つけて拡大し、H3で描き直して元の位置に戻す==ことで顔だけをきれいにする。">
+<meta property="og:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/h3-facerefine.html">
+<meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/h3-facerefine.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Hailuo H3で小さく崩れた顔を直すComfyUI拡張「ComfyUI-H3-FaceRefine」","datePublished":"2026-08-20","dateModified":"2026-08-20","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/h3-facerefine.html"}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=e3afd97a">
+<link rel="stylesheet" href="../css/style.css?v=e3afd97a">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/hailuo.html">MiniMax H3</a><span class="badge">new_feature</span><span>2026-08-20</span></div>
+<h1 class="article-title">Hailuo H3で小さく崩れた顔を直すComfyUI拡張「ComfyUI-H3-FaceRefine」</h1>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="hailuo" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="h3-facerefine" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li><mark class="hl">H3動画の「小さく崩れた顔」だけを直す</mark>ComfyUI（動画AIを部品をつないで動かす無料ツール）用の拡張</li><li><mark class="hl">1コマずつ顔を検出して拡大→H3で再生成→元に戻す</mark>ので、顔以外はそのまま</li><li>無料・オープンソース。顔の追従・切り出し・貼り戻しを自動化（<a href="https://github.com/Carasibana/ComfyUI-H3-FaceRefine" target="_blank" rel="noopener">GitHub ↗</a>）</li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>Hailuo AIの動画モデル「H3」は、人物の顔が画面の中で小さい（頭が画面のごく一部しか占めない）ときに、顔がつぶれて見えることがあります。この拡張は、<mark class="hl">動画の1コマ（フレーム）ごとに顔を自動で見つけ、その部分を画面いっぱいに拡大してからH3で描き直し、元の位置に貼り戻します</mark>。顔の部分だけを高い解像度で作り直すイメージで、それ以外の映像はそのまま保てます。仕組みは、ComfyUIで定番の顔補正（ltdrdataのImpact PackのFaceDetailer）の考え方を動画向けに応用したものです。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p>ComfyUIでHailuo H3を使い、<mark class="hl">引きの構図で顔が崩れるのが気になる</mark>人に向いています。人物中心の動画づくりで効果が出やすく、ローカルでH3を動かせる環境が前提です。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://github.com/Carasibana/ComfyUI-H3-FaceRefine" target="_blank" rel="noopener">GitHub（Carasibana/ComfyUI-H3-FaceRefine） ↗</a></p></section>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/h3-infinite-continuation-suite.html">Hailuo H3の動画を劣化なく長尺化できるComfyUI拡張「H3 Infinite Continuation Suite」</a></li><li><a href="../articles/minimax-mcp.html">MiniMaxの音声・画像・動画生成をAIから呼べる公式ツール「MiniMax-MCP」</a></li><li><a href="../articles/hailuo-h3-upcoming-models.html">MiniMax、動画生成AI「H3」の派生モデルを準備中と表明：画像生成・編集や高速版など</a></li></ul></nav>
+</article>
+</main>
+<script src="../js/app.js?v=e3afd97a" defer></script>
+</body>
+</html>
