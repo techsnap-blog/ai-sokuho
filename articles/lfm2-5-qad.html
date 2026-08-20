@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319077760187072" crossorigin="anonymous"></script>
+<title>小型AI「LFM2.5」に4bit軽量版が登場。メモリを抑えたまま精度をほぼ元通りに — AI速報まとめ</title>
+<meta name="description" content="Liquid AIが、端末上で動く小型AI「[LFM2.5](https://www.liquid.ai/blog/qad)」の==4bit軽量版（Q4_0）を、精度を保つ新手法QADで作り直して公開==した。==データ量を4bitまで削って軽いのに、精度は元（BF16）の約97%を維持==する。230M・350M・1.2B・2.6Bの4サイズが対象。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="小型AI「LFM2.5」に4bit軽量版が登場。メモリを抑えたまま精度をほぼ元通りに — AI速報まとめ">
+<meta property="og:description" content="Liquid AIが、端末上で動く小型AI「[LFM2.5](https://www.liquid.ai/blog/qad)」の==4bit軽量版（Q4_0）を、精度を保つ新手法QADで作り直して公開==した。==データ量を4bitまで削って軽いのに、精度は元（BF16）の約97%を維持==する。230M・350M・1.2B・2.6Bの4サイズが対象。">
+<meta property="og:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/lfm2-5-qad.html">
+<meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/lfm2-5-qad.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"小型AI「LFM2.5」に4bit軽量版が登場。メモリを抑えたまま精度をほぼ元通りに","datePublished":"2026-08-20","dateModified":"2026-08-20","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/lfm2-5-qad.html"}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=e3afd97a">
+<link rel="stylesheet" href="../css/style.css?v=e3afd97a">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/lfm.html">LFM（Liquid AI）</a><span class="badge">update</span><span>2026-08-20</span></div>
+<h1 class="article-title">小型AI「LFM2.5」に4bit軽量版が登場。メモリを抑えたまま精度をほぼ元通りに</h1>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="lfm" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="lfm2-5-qad" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li>LFM2.5の<mark class="hl">4bit軽量版（Q4_0）が、精度を保つ新手法「QAD」で作り直された</mark></li><li><mark class="hl">軽さはそのままに、精度は元の約97%まで回復</mark>（4サイズとも96〜97%台）</li><li>対象は230M・350M・1.2B・2.6Bの4サイズ。<mark class="hl">重み（中身のデータ）はHugging Faceで公開</mark></li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>AIを軽くする定番の方法に「量子化」があります。これは、AIの中身の数値を粗く（例：16bit→4bit）して<mark class="hl">データ量とメモリを大きく減らす</mark>やり方ですが、粗くする分だけ精度が落ちるのが弱点でした。今回Liquid AIは「QAD（量子化を見越して学習し直す蒸留）」という手法を使い、<mark class="hl">軽い4bit版でも精度をほぼ元通りに戻したLFM2.5のQ4_0版</mark>を公開しました。精度は元の高精度版（BF16）と比べて、230Mが97.1%、350Mが96.5%、1.2Bが97.4%、2.6Bが96.6%を維持しています。<mark class="hl">4bitの軽さ・省メモリはそのままに、精度低下だけを抑えた</mark>のがポイントです。重みはHugging Faceで配布されています。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p>スマホや小型機器で動くAIを組み込む開発者に関係します。<mark class="hl">メモリの少ない端末でも、精度をあまり落とさずに動かせる</mark>ようになるため、端末内で完結するアプリを作りやすくなります。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://www.liquid.ai/blog/qad" target="_blank" rel="noopener">公式（Liquid AI Blog: LFM2.5 Q4_0 Quantization-Aware Distillation） ↗</a></p></section>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/lfm-what-it-does.html">LFM（Liquid AI）でできることまとめ：スマホなど端末上だけで動く小型AIに強い</a></li><li><a href="../articles/switchbot-ai-mindclip-launch.html">SwitchBotがウェアラブルAIに参入。会話を自動で記録・要約する「AIマインドクリップ」を発表</a></li><li><a href="../articles/switchbot-what-it-does.html">SwitchBot AIマインドクリップでできることまとめ：会話を自動で記録し、要約とToDoにするAIレコーダー</a></li></ul></nav>
+</article>
+</main>
+<script src="../js/app.js?v=e3afd97a" defer></script>
+</body>
+</html>
