@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319077760187072" crossorigin="anonymous"></script>
+<title>少ないVRAMでH3の長尺動画を作る省メモリ拡張「H3 LongMedia」 — AI速報まとめ</title>
+<meta name="description" content="[ComfyUI-MiniMax-H3-LongMedia](https://github.com/vizart-vj/ComfyUI-MiniMax-H3-LongMedia)は、==グラフィックボードのメモリ(VRAM)が少なくてもH3で長い動画や音声を作れるように、メモリの使い方を切り詰めた==ComfyUI用の無料拡張。口の動きを声に合わせるリップシンクにも対応。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="少ないVRAMでH3の長尺動画を作る省メモリ拡張「H3 LongMedia」 — AI速報まとめ">
+<meta property="og:description" content="[ComfyUI-MiniMax-H3-LongMedia](https://github.com/vizart-vj/ComfyUI-MiniMax-H3-LongMedia)は、==グラフィックボードのメモリ(VRAM)が少なくてもH3で長い動画や音声を作れるように、メモリの使い方を切り詰めた==ComfyUI用の無料拡張。口の動きを声に合わせるリップシンクにも対応。">
+<meta property="og:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/h3-longmedia.html">
+<meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/h3-longmedia.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"少ないVRAMでH3の長尺動画を作る省メモリ拡張「H3 LongMedia」","datePublished":"2026-08-20","dateModified":"2026-08-20","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/h3-longmedia.html"}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=e3afd97a">
+<link rel="stylesheet" href="../css/style.css?v=e3afd97a">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/hailuo.html">MiniMax H3</a><span class="badge">new_feature</span><span>2026-08-20</span></div>
+<h1 class="article-title">少ないVRAMでH3の長尺動画を作る省メモリ拡張「H3 LongMedia」</h1>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="hailuo" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="h3-longmedia" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li><mark class="hl">VRAM(グラフィックボードの作業用メモリ)が少ないPCでも、H3で長い動画・音声を作れる</mark>ようにする省メモリ拡張</li><li><mark class="hl">メモリ不足で落ちる前に処理量を自動調整する仕組み</mark>や、映像を分割して処理する工夫で、8〜16GB程度でも長尺を狙える</li><li>画像・映像・音声の参照に対応し、<mark class="hl">声に口の動きを合わせるリップシンクも可能</mark>。無料・オープンソース(Apache 2.0)</li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>H3で長い動画を作ろうとすると、<mark class="hl">VRAM(グラフィックボードが計算に使うメモリ)が足りずに途中で止まりやすい</mark>という壁があります。この拡張は、計算の途中データを小分けにして流す方式や、<mark class="hl">データを軽い形式(INT8など)に圧縮して持つ</mark>工夫、映像を分割して処理する方式などで、<mark class="hl">必要なVRAMを抑えて長尺の生成を可能にします</mark>。さらに<mark class="hl">メモリが尽きそうになる前に処理の規模を自動で調整して、途中で落ちるのを防ぐ仕組み</mark>も備えます。複数クリップの計画、映像の一部を参照した編集、ループ生成、そして<mark class="hl">声に合わせて口を動かすリップシンク</mark>にも対応します。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p><mark class="hl">高価なグラフィックボードを持たず、手持ちのPCでH3の長尺動画に挑戦したい人</mark>に向いています。目安は8〜16GBのVRAM(作る長さによる)で、ComfyUIの動的VRAM機能を有効にしておく必要があります。現在の安定版はv0.4.2です。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://github.com/vizart-vj/ComfyUI-MiniMax-H3-LongMedia" target="_blank" rel="noopener">GitHub（vizart-vj/ComfyUI-MiniMax-H3-LongMedia） ↗</a></p></section>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/h3-extender.html">H3の短い動画を動きと音をつないで長尺化するComfyUI拡張「H3 Extender」</a></li><li><a href="../articles/h3-facerefine.html">Hailuo H3で小さく崩れた顔を直すComfyUI拡張「ComfyUI-H3-FaceRefine」</a></li><li><a href="../articles/h3-infinite-continuation-suite.html">Hailuo H3の動画を劣化なく長尺化できるComfyUI拡張「H3 Infinite Continuation Suite」</a></li></ul></nav>
+</article>
+</main>
+<script src="../js/app.js?v=e3afd97a" defer></script>
+</body>
+</html>

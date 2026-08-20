@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319077760187072" crossorigin="anonymous"></script>
+<title>Grokに「Webページ要約」を頼むと会話が盗まれる恐れ。未修正の脆弱性が公表 — AI速報まとめ</title>
+<meta name="description" content="セキュリティ企業Adversa AIが、xAIの[Grok](https://grok.com)に==罠を仕込んだWebページの要約を頼むと、名前・おおよその居場所・会話内容が攻撃者に送られてしまう恐れ==があると公表。==8月19日時点で未修正==とされ、注意が必要。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="Grokに「Webページ要約」を頼むと会話が盗まれる恐れ。未修正の脆弱性が公表 — AI速報まとめ">
+<meta property="og:description" content="セキュリティ企業Adversa AIが、xAIの[Grok](https://grok.com)に==罠を仕込んだWebページの要約を頼むと、名前・おおよその居場所・会話内容が攻撃者に送られてしまう恐れ==があると公表。==8月19日時点で未修正==とされ、注意が必要。">
+<meta property="og:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/grok-context-injection-leak.html">
+<meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/grok-context-injection-leak.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Grokに「Webページ要約」を頼むと会話が盗まれる恐れ。未修正の脆弱性が公表","datePublished":"2026-08-20","dateModified":"2026-08-20","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/grok-context-injection-leak.html"}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=e3afd97a">
+<link rel="stylesheet" href="../css/style.css?v=e3afd97a">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/grok.html">Grok</a><span class="badge">update</span><span>2026-08-20</span></div>
+<h1 class="article-title">Grokに「Webページ要約」を頼むと会話が盗まれる恐れ。未修正の脆弱性が公表</h1>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="grok" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="grok-context-injection-leak" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li>セキュリティ企業Adversa AIが、Grokに<mark class="hl">「このページを要約して」と頼むと、罠を仕込んだページ内の隠し命令をGrokが実行してしまう</mark>脆弱性を公表</li><li><mark class="hl">実証では、利用者の名前・おおよその居場所・契約プラン・会話のやり取りが、攻撃者のサーバーへ送られた</mark>(確認画面や警告なし)</li><li>報告元によると<mark class="hl">8月19日時点で修正されておらず</mark>、xAIは「実害はない」との立場と報じられている</li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>セキュリティ企業Adversa AIが、xAIのAIチャット<a href="https://grok.com" target="_blank" rel="noopener">Grok ↗</a>に、<mark class="hl">「Cryptographic Context Injection」と名付けた攻撃手法</mark>を公表しました。仕組みは、<mark class="hl">攻撃者がWebページの中に暗号化した悪意ある命令とその解読キーを仕込んでおき、利用者がそのページの要約をGrokに頼むと、Grokが命令を解読して実行してしまう</mark>というものです。命令を暗号化しておくことで、内容をチェックする安全フィルターをすり抜けます。<mark class="hl">実証(概念実証)では、利用者の名前・おおよその居場所・契約プラン・そのときの会話内容が、URLの後ろにくっつける形で攻撃者のサーバーへ送信された</mark>と報告されています。確認画面も目に見える警告も出なかったとされます。Adversa AIは6月3日にxAIへ報告し(バグ報奨金プログラム経由)、8月にも複数回連絡しましたが、<mark class="hl">8月19日時点でも同じ手口が有効だった</mark>と説明しています。The RegisterやThe Hacker Newsが報じ、xAIは「実害はない」との立場と伝えられています。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p><mark class="hl">Grokを使っていて、Webページの要約を頼むことがある人</mark>に関係します。あくまで報告元による実証段階の指摘で、xAI公式の見解とは食い違いがあります。<mark class="hl">信頼できないページの要約を安易に頼まない</mark>、機微な情報を会話に残さない、といった慎重な使い方が当面の自衛策になります。修正状況は今後の公式対応を待つ必要があります。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://adversa.ai/blog/cryptographic-context-injection-grok-data-theft" target="_blank" rel="noopener">Adversa AI（脆弱性の公表元ブログ） ↗</a></p></section>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/grok-bot-ai-teammates.html">xAIが「Grok Bot」を提供開始。あなたの代わりに実務をこなすAIの同僚</a></li><li><a href="../articles/grok-what-it-does.html">Grokでできることまとめ：X（旧Twitter）連携のAIで会話・画像生成・リアルタイム検索</a></li><li><a href="../articles/lfm-what-it-does.html">LFM（Liquid AI）でできることまとめ：スマホなど端末上だけで動く小型AIに強い</a></li></ul></nav>
+</article>
+</main>
+<script src="../js/app.js?v=e3afd97a" defer></script>
+</body>
+</html>

@@ -37,7 +37,7 @@
 <section class="article-block"><h2>何が変わった</h2><p>AIを軽くする定番の方法に「量子化」があります。これは、AIの中身の数値を粗く（例：16bit→4bit）して<mark class="hl">データ量とメモリを大きく減らす</mark>やり方ですが、粗くする分だけ精度が落ちるのが弱点でした。今回Liquid AIは「QAD（量子化を見越して学習し直す蒸留）」という手法を使い、<mark class="hl">軽い4bit版でも精度をほぼ元通りに戻したLFM2.5のQ4_0版</mark>を公開しました。精度は元の高精度版（BF16）と比べて、230Mが97.1%、350Mが96.5%、1.2Bが97.4%、2.6Bが96.6%を維持しています。<mark class="hl">4bitの軽さ・省メモリはそのままに、精度低下だけを抑えた</mark>のがポイントです。重みはHugging Faceで配布されています。</p></section>
 <section class="article-block"><h2>誰に関係する</h2><p>スマホや小型機器で動くAIを組み込む開発者に関係します。<mark class="hl">メモリの少ない端末でも、精度をあまり落とさずに動かせる</mark>ようになるため、端末内で完結するアプリを作りやすくなります。</p></section>
 <section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://www.liquid.ai/blog/qad" target="_blank" rel="noopener">公式（Liquid AI Blog: LFM2.5 Q4_0 Quantization-Aware Distillation） ↗</a></p></section>
-<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/lfm-what-it-does.html">LFM（Liquid AI）でできることまとめ：スマホなど端末上だけで動く小型AIに強い</a></li><li><a href="../articles/qwen-agent.html">Qwenにツール操作やエージェント機能を足せる公式フレームワーク「Qwen-Agent」</a></li><li><a href="../articles/switchbot-ai-mindclip-launch.html">SwitchBotがウェアラブルAIに参入。会話を自動で記録・要約する「AIマインドクリップ」を発表</a></li></ul></nav>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/lfm-what-it-does.html">LFM（Liquid AI）でできることまとめ：スマホなど端末上だけで動く小型AIに強い</a></li><li><a href="../articles/grok-context-injection-leak.html">Grokに「Webページ要約」を頼むと会話が盗まれる恐れ。未修正の脆弱性が公表</a></li><li><a href="../articles/qwen-agent.html">Qwenにツール操作やエージェント機能を足せる公式フレームワーク「Qwen-Agent」</a></li></ul></nav>
 </article>
 </main>
 <script src="../js/app.js?v=e3afd97a" defer></script>
