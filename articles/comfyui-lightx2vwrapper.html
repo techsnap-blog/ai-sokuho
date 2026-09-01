@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319077760187072" crossorigin="anonymous"></script>
+<title>動画生成を軽く・速くするComfyUI拡張「Lightx2v Wrapper」 — AI速報まとめ</title>
+<meta name="description" content="[ComfyUI-Lightx2vWrapper](https://github.com/ModelTC/ComfyUI-Lightx2vWrapper)は、画像生成ツール[ComfyUI](https://github.com/comfyanonymous/ComfyUI)から動画生成の高速化ライブラリLightX2Vを使えるようにする無料拡張。==高速化やメモリ節約の工夫を組み合わせて、動画生成を軽く・速くできる==のが強み。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="動画生成を軽く・速くするComfyUI拡張「Lightx2v Wrapper」 — AI速報まとめ">
+<meta property="og:description" content="[ComfyUI-Lightx2vWrapper](https://github.com/ModelTC/ComfyUI-Lightx2vWrapper)は、画像生成ツール[ComfyUI](https://github.com/comfyanonymous/ComfyUI)から動画生成の高速化ライブラリLightX2Vを使えるようにする無料拡張。==高速化やメモリ節約の工夫を組み合わせて、動画生成を軽く・速くできる==のが強み。">
+<meta property="og:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/comfyui-lightx2vwrapper.html">
+<meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/comfyui-lightx2vwrapper.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"動画生成を軽く・速くするComfyUI拡張「Lightx2v Wrapper」","datePublished":"2026-09-01","dateModified":"2026-09-01","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/comfyui-lightx2vwrapper.html"}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=cc12c893">
+<link rel="stylesheet" href="../css/style.css?v=cc12c893">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/comfyui.html">ComfyUI</a><span class="badge">new_feature</span><span>2026-09-01</span></div>
+<h1 class="article-title">動画生成を軽く・速くするComfyUI拡張「Lightx2v Wrapper」</h1>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="comfyui" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="comfyui-lightx2vwrapper" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li><mark class="hl">文章から動画(T2V)・画像から動画(I2V)</mark>の両方に対応した、ComfyUI用の動画生成拡張</li><li><mark class="hl">キャッシュによる高速化(最大3倍)・計算を軽くする量子化(int8/fp8)・メモリ節約(CPUへの一時退避)</mark>など、動画生成を軽く速くする工夫をまとめて使える</li><li>無料(MITライセンス)。wan2.1やHunyuanなど複数の動画モデルに対応(<a href="https://github.com/ModelTC/ComfyUI-Lightx2vWrapper" target="_blank" rel="noopener">GitHub ↗</a>)</li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>動画生成は画像より計算が重く、時間もメモリも大きく消費します。<mark class="hl">LightX2Vは動画生成を高速・省メモリで動かすための仕組み</mark>で、この拡張はそれをComfyUIのノードとして使えるようにします。設定を役割ごとに分けたノードで組み立てられ、<mark class="hl">TeaCache(途中計算の使い回しによる最大3倍の高速化)、int8/fp8への量子化(数値を粗くして計算を軽くする)、CPUへの一時退避によるメモリ節約、軽量なVAE(画像への復元処理)</mark>といった最適化を組み合わせられます。<mark class="hl">LoRA(追加学習の小さなファイル)を複数つなげて作風を足すこと</mark>もでき、wan2.1やHunyuanなど複数の動画モデルに対応します。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p><mark class="hl">手元のパソコンで動画生成を少しでも軽く・速く回したいComfyUI利用者</mark>に向いています。導入はComfyUIのカスタムノード管理(ComfyUI-Manager)またはGitHubのURL指定で行い、別途対応する動画モデルの用意が必要です。GPU(グラフィックボード)の性能によって使える最適化や生成速度は変わります。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://github.com/ModelTC/ComfyUI-Lightx2vWrapper" target="_blank" rel="noopener">GitHub（ModelTC/ComfyUI-Lightx2vWrapper） ↗</a></p></section>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/comfyui-easy-media.html">動画の読み込みと組み立てを簡単にするComfyUI拡張「Easy-Media」</a></li><li><a href="../articles/comfyui-plaguekind-nodes.html">画像とマスクのリサイズを一手にまとめるComfyUI拡張「PlagueKind Nodes」</a></li><li><a href="../articles/comfyui-what-it-does.html">ComfyUIでできることまとめ：AIモデルを部品でつなぐ無料の生成ツール台</a></li></ul></nav>
+</article>
+</main>
+<footer class="site-footer-legal"><nav class="footer-nav"><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">運営者情報</a><a href="../contact.html">お問い合わせ</a></nav><p class="footer-copy">© 2026 AI速報まとめ</p></footer>
+<script src="../js/app.js?v=cc12c893" defer></script>
+</body>
+</html>
