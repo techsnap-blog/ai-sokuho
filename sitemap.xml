@@ -68,12 +68,18 @@
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/ai/hermes-agent.html</loc></url>
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/ai/comfyui.html</loc></url>
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/ai/etc.html</loc></url>
+  <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/ai-image-prompts-skill.html</loc></url>
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/comfyui-easy-media.html</loc></url>
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/comfyui-lightx2vwrapper.html</loc></url>
+  <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/comfyui-mcp.html</loc></url>
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/comfyui-plaguekind-nodes.html</loc></url>
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/manga-editor-desu.html</loc></url>
+  <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/mflux.html</loc></url>
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/model-keyword.html</loc></url>
+  <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/rapid-mlx.html</loc></url>
+  <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/sd-webui-lobe-theme.html</loc></url>
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/chatgpt-workspace-agents.html</loc></url>
+  <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/deepseek-v4-flash-vision-exp.html</loc></url>
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/gemini-omni-1-1-video-extension.html</loc></url>
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/comfyui-what-it-does.html</loc></url>
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/copilot-weekly-2026-08-24.html</loc></url>
@@ -236,4 +242,5 @@
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/gemini-southeast-asia.html</loc></url>
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/cursor-side-chats.html</loc></url>
   <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/gemini-study-notebooks.html</loc></url>
+  <url><loc>https://techsnap-blog.github.io/ai-sokuho/articles/chatgpt-gpt-live.html</loc></url>
 </urlset>
