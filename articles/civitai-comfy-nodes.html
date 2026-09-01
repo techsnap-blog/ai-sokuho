@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319077760187072" crossorigin="anonymous"></script>
+<title>ComfyUIからCivitaiのクラウド生成を使える「civitai-comfy-nodes」。高性能GPUなしで画像・動画を作れる — AI速報まとめ</title>
+<meta name="description" content="画像生成AI「ComfyUI」から、Civitaiのクラウド生成機能を呼び出せる無料の追加ノード集「civitai-comfy-nodes」。手元に高性能GPUがなくても、Civitaiのサーバー側で画像・動画・音声の生成やアップスケールを実行できる。約160個のノードを収録。処理はCivitaiのポイント「Buzz」で課金される。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="ComfyUIからCivitaiのクラウド生成を使える「civitai-comfy-nodes」。高性能GPUなしで画像・動画を作れる — AI速報まとめ">
+<meta property="og:description" content="画像生成AI「ComfyUI」から、Civitaiのクラウド生成機能を呼び出せる無料の追加ノード集「civitai-comfy-nodes」。手元に高性能GPUがなくても、Civitaiのサーバー側で画像・動画・音声の生成やアップスケールを実行できる。約160個のノードを収録。処理はCivitaiのポイント「Buzz」で課金される。">
+<meta property="og:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/civitai-comfy-nodes.html">
+<meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/civitai-comfy-nodes.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"ComfyUIからCivitaiのクラウド生成を使える「civitai-comfy-nodes」。高性能GPUなしで画像・動画を作れる","datePublished":"2026-09-01","dateModified":"2026-09-01","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/civitai-comfy-nodes.html"}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=cc12c893">
+<link rel="stylesheet" href="../css/style.css?v=cc12c893">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/comfyui.html">ComfyUI</a><span class="badge">repository</span><span>2026-09-01</span></div>
+<h1 class="article-title">ComfyUIからCivitaiのクラウド生成を使える「civitai-comfy-nodes」。高性能GPUなしで画像・動画を作れる</h1>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="comfyui" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="civitai-comfy-nodes" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li>ComfyUIから、AIモデル共有サイト「Civitai」のクラウド生成を呼び出せる無料の追加ノード集「civitai-comfy-nodes」の紹介</li><li><mark class="hl">手元に高性能GPUがなくても、Civitaiのサーバー側で画像・動画・音声の生成やアップスケールができる</mark></li><li>約160個のノードを収録。<mark class="hl">処理はCivitaiのポイント「Buzz」で課金される</mark></li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>画像生成AI「ComfyUI」に、<mark class="hl">AIモデル共有サイト「Civitai」のクラウド生成機能</mark>を組み込む無料の追加ノード集<mark class="hl">「<a href="https://github.com/civitai/civitai-comfy-nodes" target="_blank" rel="noopener">civitai-comfy-nodes ↗</a>」</mark>が公開されています。ComfyUIは通常、自分のPCのGPUで画像を作りますが、このノード集を入れると、<mark class="hl">画像・動画・音声の生成やアップスケール（高解像度化）・学習・説明文づけを、Civitaiのサーバー側（クラウド）で実行</mark>できます。ざっくり言うと、<mark class="hl">手元のPCに強力なGPUがなくても、ComfyUIの操作画面のまま重い生成をクラウドに任せられる</mark>仕組みです。<mark class="hl">用途別（画像・動画・音声・テキスト・分析・学習）に約160個のノードを収録</mark>し、Civitai上のモデルやLoRA（追加学習データ）を選んで使えます。過去の生成履歴を横から確認でき、Flux2・Kling・Soraなど複数の生成エンジンにも対応します。動かすにはPythonの環境（`requests`と`python-socketio`）とComfyUIが必要です。<mark class="hl">クラウドで処理する分は、Civitaiのポイント「Buzz」で課金</mark>されます（無料ではない点に注意）。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p><mark class="hl">高性能GPUを持たずにComfyUIで画像・動画を作りたい人</mark>や、<mark class="hl">Civitaiのモデルをそのまま試したい人</mark>に関係します。生成をクラウドに任せる分Buzz（ポイント）がかかるため、無料で使いたい場合はローカル生成のままがよいでしょう。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://github.com/civitai/civitai-comfy-nodes" target="_blank" rel="noopener">civitai-comfy-nodes（GitHub・公式） ↗</a></p></section>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/comfypanel.html">PhotoshopからComfyUIを直接使える「ComfyPanel」。画像生成AIを制作画面の中で回せる</a></li><li><a href="../articles/comfyui-easy-media.html">動画の読み込みと組み立てを簡単にするComfyUI拡張「Easy-Media」</a></li><li><a href="../articles/comfyui-lightx2vwrapper.html">動画生成を軽く・速くするComfyUI拡張「Lightx2v Wrapper」</a></li></ul></nav>
+</article>
+</main>
+<footer class="site-footer-legal"><nav class="footer-nav"><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">運営者情報</a><a href="../contact.html">お問い合わせ</a></nav><p class="footer-copy">© 2026 AI速報まとめ</p></footer>
+<script src="../js/app.js?v=cc12c893" defer></script>
+</body>
+</html>
