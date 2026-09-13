@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319077760187072" crossorigin="anonymous"></script>
+<title>「LGTM」— GitHub Copilotに、変更したコードをレビューさせるVS Code拡張 — AI速報まとめ</title>
+<meta name="description" content="[LGTM](https://github.com/cpulvermacher/lgtm) は、==GitHub Copilot Chat を使って、自分が書き換えたコードをマージ前にレビューさせる== VS Code（プログラミング用の無料エディタ）向けの拡張機能。==指摘は深刻度の高い順にファイルごとにまとまって出る==。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="「LGTM」— GitHub Copilotに、変更したコードをレビューさせるVS Code拡張 — AI速報まとめ">
+<meta property="og:description" content="[LGTM](https://github.com/cpulvermacher/lgtm) は、==GitHub Copilot Chat を使って、自分が書き換えたコードをマージ前にレビューさせる== VS Code（プログラミング用の無料エディタ）向けの拡張機能。==指摘は深刻度の高い順にファイルごとにまとまって出る==。">
+<meta property="og:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/lgtm.html">
+<meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/lgtm.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"「LGTM」— GitHub Copilotに、変更したコードをレビューさせるVS Code拡張","datePublished":"2026-09-13","dateModified":"2026-09-13","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/lgtm.html"}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=cc12c893">
+<link rel="stylesheet" href="../css/style.css?v=cc12c893">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/github-copilot.html">GitHub Copilot</a><span class="badge">repo</span><span>2026-09-13</span></div>
+<h1 class="article-title">「LGTM」— GitHub Copilotに、変更したコードをレビューさせるVS Code拡張</h1>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="github-copilot" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="lgtm" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li><mark class="hl">Copilot Chat に自分の変更コードをレビューさせ、バグや改善点を挙げてもらえる</mark>拡張機能</li><li><mark class="hl">指摘は深刻度順に並び、行番号をクリックすればその場所へ飛べる</mark></li><li><mark class="hl">指摘からそのまま修正を適用できる</mark>。Copilot Chat は無料プランでも動く</li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>LGTM は VS Code に入れて使う拡張機能（エディタに後から足せる追加機能）です。プルリクエスト（他の人に取り込んでもらうための変更のまとまり）や、まだコミットしていない手元の変更を対象に、<mark class="hl">GitHub Copilot Chat へレビューを依頼できます</mark>。実行はコマンドパレットから「LGTM: Start Code Review...」を選ぶか、チャットで `/review` と打つだけです。<mark class="hl">返ってきた指摘はファイルごとにまとまり、深刻度の高い順に並びます</mark>。行番号がリンクになっていて、クリックすれば該当箇所に移動できます。<mark class="hl">指摘の内容をそのまま修正として当てることもできます</mark>。レビューはチャットに残るので、「なぜこれが問題なのか」を続けて質問できます。リポジトリのルールを書いた `AGENTS.md` が既定で参考資料として読み込まれ、設定から追加のファイルや共通の指示文を足すこともできます。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p>VS Code と GitHub Copilot Chat を使っている人に関係します。<mark class="hl">Copilot Chat は無料プランでも有料プランでも利用できる</mark>とされています。GitHub Pull Requests 拡張や Atlassian Bitbucket 拡張を入れていれば、プルリクエスト単位のレビューにも対応します。なお、<mark class="hl">レビュー対象のソースコードとコミットメッセージは、設定したAIモデルの提供元へ送られます</mark>。社外に出せないコードを扱うときは、この点を確認してから使う必要があります。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://github.com/cpulvermacher/lgtm" target="_blank" rel="noopener">GitHub（cpulvermacher/lgtm） ↗</a></p></section>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/copilot-weekly-2026-08-24.html">GitHub Copilotが週次更新、Slack・Teamsでの相談やアプリのカスタマイズ集約に対応</a></li><li><a href="../articles/copilot-mai-code-1-flash-deprecation.html">GitHub Copilotの「MAI-Code-1-Flash」が提供終了へ。9月10日までに新モデルへ切り替えを</a></li><li><a href="../articles/github-copilot-token-breakdown.html">GitHub Copilotの利用明細に「モデル別トークン内訳」が追加。何にいくらかかったか追えるように</a></li></ul></nav>
+</article>
+</main>
+<footer class="site-footer-legal"><nav class="footer-nav"><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">運営者情報</a><a href="../contact.html">お問い合わせ</a></nav><p class="footer-copy">© 2026 AI速報まとめ</p></footer>
+<script src="../js/app.js?v=cc12c893" defer></script>
+</body>
+</html>
