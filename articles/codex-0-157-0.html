@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319077760187072" crossorigin="anonymous"></script>
+<title>OpenAI Codex CLI 0.157.0：新モデル「GPT-6 Sol」「GPT-6 Luna」に対応、会話の分岐も可能に — AI速報まとめ</title>
+<meta name="description" content="Codex CLIの0.157.0で==新モデルGPT-6 SolとGPT-6 Lunaが使えるように==なった。Amazon Bedrock経由の利用や、古いモデルからの乗り換え案内にも対応。==会話を途中から枝分かれさせる機能==も入った。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="OpenAI Codex CLI 0.157.0：新モデル「GPT-6 Sol」「GPT-6 Luna」に対応、会話の分岐も可能に — AI速報まとめ">
+<meta property="og:description" content="Codex CLIの0.157.0で==新モデルGPT-6 SolとGPT-6 Lunaが使えるように==なった。Amazon Bedrock経由の利用や、古いモデルからの乗り換え案内にも対応。==会話を途中から枝分かれさせる機能==も入った。">
+<meta property="og:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/codex-0-157-0.html">
+<meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/codex-0-157-0.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"OpenAI Codex CLI 0.157.0：新モデル「GPT-6 Sol」「GPT-6 Luna」に対応、会話の分岐も可能に","datePublished":"2026-09-26","dateModified":"2026-09-26","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/codex-0-157-0.html"}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=cc12c893">
+<link rel="stylesheet" href="../css/style.css?v=cc12c893">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/codex.html">Codex</a><span class="badge">new_feature</span><span>2026-09-26</span></div>
+<h1 class="article-title">OpenAI Codex CLI 0.157.0：新モデル「GPT-6 Sol」「GPT-6 Luna」に対応、会話の分岐も可能に</h1>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="codex" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="codex-0-157-0" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li><mark class="hl">新モデル「GPT-6 Sol」「GPT-6 Luna」がCodexで使えるようになった</mark>。Amazon Bedrock（Amazonのクラウド経由でAIを使うサービス）にも対応</li><li>古いモデルを使っていると、新しいモデルへの乗り換えを案内してくれる</li><li><mark class="hl">会話を途中から枝分かれ（フォーク）させる機能を追加</mark>。書きかけの入力や待ち行列の指示も引き継がれる</li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>Codex（コーディングを手伝うCLI＝コマンドで操作するツール）の0.157.0で、<mark class="hl">OpenAIの新しいモデル「GPT-6 Sol」と「GPT-6 Luna」を選べるようになりました</mark>。Amazon Bedrock経由でも使え、古いモデルを使っている人には乗り換えを促す案内が出ます。もう一つの新機能が<mark class="hl">会話のフォーク</mark>です。`f` キーで今の会話を枝分かれさせられるので、別の方針を試したいときに元の流れを壊さずに済みます。書きかけの入力や、順番待ちにしていた指示もそのまま引き継がれます。ほかに、会話の記録を全画面で表示する設定が標準になり（Shiftを押しながらクリックで文字を選べる）、条件を満たす対話では裏方のサーバーが自動で起動するようになりました。`/import` コマンドは、裏方サーバーを使うセッションでも使えるようになっています。不具合の修正では、スレッドを切り替えても音声会話が途切れない、送信前の質問の下書きが入力欄に戻る、ファイルのアップロードの再試行と待ち時間の延長（5分）などが入りました。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p>Codexを使っている人、とくに<mark class="hl">新しいGPT-6系のモデルをコーディングで試したい人</mark>に関係します。Amazon Bedrock経由でAIを使っている開発チームにも関係します。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://github.com/openai/codex/releases/tag/rust-v0.157.0" target="_blank" rel="noopener">リリースノート（GitHub） ↗</a></p></section>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/codex-voice-experimental.html">OpenAIの「Codex」に音声で会話する実験機能。話しかけると文字起こしされ、マイク操作もできる</a></li><li><a href="../articles/ccpocket.html">スマホからCodex・Claude Codeを動かせるモバイルアプリ「CC Pocket」</a></li><li><a href="../articles/clawmetry.html">Claude CodeやCodexの「作業の中身」を可視化する無料ツール「ClawMetry」</a></li></ul></nav>
+</article>
+</main>
+<footer class="site-footer-legal"><nav class="footer-nav"><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">運営者情報</a><a href="../contact.html">お問い合わせ</a></nav><p class="footer-copy">© 2026 AI速報まとめ</p></footer>
+<script src="../js/app.js?v=cc12c893" defer></script>
+</body>
+</html>
