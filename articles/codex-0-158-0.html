@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319077760187072" crossorigin="anonymous"></script>
+<title>OpenAI Codex CLI 0.158.0：画像の背景を透明にできるように、コピーや貼り付けも改善 — AI速報まとめ</title>
+<meta name="description" content="Codex CLIの0.158.0で、==画像生成で背景を透明にするよう指定できる==ようになった。全画面表示での==コピー＆貼り付け==の設定も加わり、Windowsなどの不具合も多数修正された。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="OpenAI Codex CLI 0.158.0：画像の背景を透明にできるように、コピーや貼り付けも改善 — AI速報まとめ">
+<meta property="og:description" content="Codex CLIの0.158.0で、==画像生成で背景を透明にするよう指定できる==ようになった。全画面表示での==コピー＆貼り付け==の設定も加わり、Windowsなどの不具合も多数修正された。">
+<meta property="og:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/codex-0-158-0.html">
+<meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/codex-0-158-0.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"OpenAI Codex CLI 0.158.0：画像の背景を透明にできるように、コピーや貼り付けも改善","datePublished":"2026-09-28","dateModified":"2026-09-28","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/codex-0-158-0.html"}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=cc12c893">
+<link rel="stylesheet" href="../css/style.css?v=cc12c893">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/codex.html">Codex</a><span class="badge">update</span><span>2026-09-28</span></div>
+<h1 class="article-title">OpenAI Codex CLI 0.158.0：画像の背景を透明にできるように、コピーや貼り付けも改善</h1>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="codex" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="codex-0-158-0" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li><mark class="hl">画像を作るとき、背景を透明にするよう明示的に頼めるようになった</mark>。画像の編集ツールは、会話に載っている画像ファイルをそのまま受け取れる</li><li><mark class="hl">全画面表示で、選択した文字を自動でコピーする設定や、右クリックで貼り付ける設定</mark>が追加。コピーしてもMarkdownの書式が残る</li><li>Windows・Linux・macOSの安全機能（サンドボックス）まわりの不具合を多数修正</li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>Codex（コーディングを手伝うCLI＝コマンドで操作するツール）の0.158.0が公開されました。画像まわりでは、<mark class="hl">画像生成で透明な背景を明示的に頼める</mark>ようになり、編集ツールも会話に載っている画像ファイルをそのまま扱えます。操作面では、全画面表示で<mark class="hl">文字を選ぶだけでコピーされる設定と、右クリックで貼り付けられる設定</mark>を選べます。会話の記録をコピーしたとき、Markdownの書式も保たれます。設定まわりでは、MCP（AIが外部ツールとやり取りする仕組み）サーバーにOAuthのクライアントシークレットを登録でき、`codex mcp add --oauth-client-secret` で追加できます。裏方サーバーとのWebSocket接続にも、トークンによる保護が付きました。権限の確認では、管理者権限が要るコマンドの入力承認が標準になっています。不具合の修正では、Windowsのサンドボックスが標準のパスや保存済みの認証情報で失敗する問題、Linuxのサンドボックスが起動しない問題、macOSで承認の確認が多すぎる問題などが直りました。公式は、全体で約120件のコミットが入った更新としています。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p>Codexを使っている人に関係します。とくに<mark class="hl">全画面表示でコピーや貼り付けがしにくかった人</mark>や、<mark class="hl">Windowsで安全機能まわりのエラーに当たっていた人</mark>は、更新の恩恵を受けやすい内容です。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://github.com/openai/codex/releases/tag/rust-v0.158.0" target="_blank" rel="noopener">リリースノート（GitHub） ↗</a></p></section>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/codex-0-157-0.html">OpenAI Codex CLI 0.157.0：新モデル「GPT-6 Sol」「GPT-6 Luna」に対応、会話の分岐も可能に</a></li><li><a href="../articles/codex-voice-experimental.html">OpenAIの「Codex」に音声で会話する実験機能。話しかけると文字起こしされ、マイク操作もできる</a></li><li><a href="../articles/ccpocket.html">スマホからCodex・Claude Codeを動かせるモバイルアプリ「CC Pocket」</a></li></ul></nav>
+</article>
+</main>
+<footer class="site-footer-legal"><nav class="footer-nav"><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">運営者情報</a><a href="../contact.html">お問い合わせ</a></nav><p class="footer-copy">© 2026 AI速報まとめ</p></footer>
+<script src="../js/app.js?v=cc12c893" defer></script>
+</body>
+</html>

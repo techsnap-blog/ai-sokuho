@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319077760187072" crossorigin="anonymous"></script>
+<title>AIが前回の作業を覚えていない問題に。セッションをまたいで記憶を引き継ぐ「claude-mem」 — AI速報まとめ</title>
+<meta name="description" content="[claude-mem](https://github.com/thedotmack/claude-mem)は、AIとの作業内容を記録して要約し、==次の会話の始めに必要な部分を自動で思い出させる==オープンソースのツール。Claude Codeを中心に、CursorやGitHub Copilotなどでも使える。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="AIが前回の作業を覚えていない問題に。セッションをまたいで記憶を引き継ぐ「claude-mem」 — AI速報まとめ">
+<meta property="og:description" content="[claude-mem](https://github.com/thedotmack/claude-mem)は、AIとの作業内容を記録して要約し、==次の会話の始めに必要な部分を自動で思い出させる==オープンソースのツール。Claude Codeを中心に、CursorやGitHub Copilotなどでも使える。">
+<meta property="og:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/claude-mem.html">
+<meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/claude-mem.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"AIが前回の作業を覚えていない問題に。セッションをまたいで記憶を引き継ぐ「claude-mem」","datePublished":"2026-09-29","dateModified":"2026-09-29","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/claude-mem.html"}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=cc12c893">
+<link rel="stylesheet" href="../css/style.css?v=cc12c893">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/claude-code.html">Claude Code</a><span class="badge">new_feature</span><span>2026-09-29</span></div>
+<h1 class="article-title">AIが前回の作業を覚えていない問題に。セッションをまたいで記憶を引き継ぐ「claude-mem」</h1>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="claude-code" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="claude-mem" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li><a href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">claude-mem ↗</a>は、<mark class="hl">AIが作業中にやったことを記録し、次の会話で必要な分だけ思い出させる</mark>仕組み。会話を切っても前回の続きから始めやすくなる</li><li>Claude Codeのほか、Cursor、GitHub Copilot、OpenCodeなどで使える。導入は `npx claude-mem install` の1行</li><li>Apache License 2.0のオープンソース。ただし記憶の要約には14日間の無料体験があり、その後はAnthropicのプランを使う形になる</li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>AIのコーディング道具は、会話を新しく始めるたびに、前回までの作業内容を忘れてしまいます。claude-memは、<mark class="hl">AIが作業中に行った操作を自動で記録し、AIで要約して保存し、次の会話で関係する部分だけを渡し直す</mark>ツールです。ざっくり言うと、AIに作業ノートを付けさせて、次回その要点を読み返させる仕組みです。手元のPCで動く小さなサーバーとデータベース（SQLite）を使い、検索は「目次→時系列→詳細」の3段階で必要な分だけ読み込むため、トークン（処理する文字の量）を節約できるとREADMEは説明しています（約10倍の節約とうたっていますが、環境による数字で、こちらでは確かめていません）。動かすにはNode.js 20以上、Bun、SQLite3、uv（Pythonの道具）が必要です。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p><mark class="hl">Claude Codeなどで長い期間、同じプロジェクトを進めている人</mark>に関係します。毎回「前回はこうした」と説明し直している人ほど使い道があります。一方で、記憶の要約には別途AIの処理がかかる点や、必要な道具が多い点には注意が必要です。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://github.com/thedotmack/claude-mem" target="_blank" rel="noopener">GitHub（thedotmack/claude-mem） ↗</a></p></section>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/agent-reach.html">AIがX・Reddit・YouTubeなどを読めるようにする無料ツール「Agent Reach」</a></li><li><a href="../articles/caveman.html">AIの返事を“原始人口調”で短くしてトークンを節約する「Caveman」</a></li><li><a href="../articles/cc-switch.html">Claude CodeやCodexの設定をまとめて切り替えるデスクトップアプリ「CC Switch」</a></li></ul></nav>
+</article>
+</main>
+<footer class="site-footer-legal"><nav class="footer-nav"><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">運営者情報</a><a href="../contact.html">お問い合わせ</a></nav><p class="footer-copy">© 2026 AI速報まとめ</p></footer>
+<script src="../js/app.js?v=cc12c893" defer></script>
+</body>
+</html>
