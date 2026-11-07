@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319077760187072" crossorigin="anonymous"></script>
+<title>OpenAI Codex CLI 0.167.0：エージェントの管理画面で「未読の結果」が分かるように。貼った画像のプレビューにも対応 — AI速報まとめ</title>
+<meta name="description" content="Codex CLIの0.167.0で、==複数のエージェントをまとめて見る管理画面に、まだ見ていない結果の印が付く==ようになった。入力欄で添付画像をプレビューでき、接続先を切り替えても書きかけの入力が消えなくなった。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="OpenAI Codex CLI 0.167.0：エージェントの管理画面で「未読の結果」が分かるように。貼った画像のプレビューにも対応 — AI速報まとめ">
+<meta property="og:description" content="Codex CLIの0.167.0で、==複数のエージェントをまとめて見る管理画面に、まだ見ていない結果の印が付く==ようになった。入力欄で添付画像をプレビューでき、接続先を切り替えても書きかけの入力が消えなくなった。">
+<meta property="og:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/codex-0-167-0.html">
+<meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/codex-0-167-0.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"OpenAI Codex CLI 0.167.0：エージェントの管理画面で「未読の結果」が分かるように。貼った画像のプレビューにも対応","datePublished":"2026-11-07","dateModified":"2026-11-07","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/codex-0-167-0.html"}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=cc12c893">
+<link rel="stylesheet" href="../css/style.css?v=cc12c893">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/codex.html">Codex</a><span class="badge">update</span><span>2026-11-07</span></div>
+<h1 class="article-title">OpenAI Codex CLI 0.167.0：エージェントの管理画面で「未読の結果」が分かるように。貼った画像のプレビューにも対応</h1>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="codex" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="codex-0-167-0" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li>`codex agents --no-daemon` で開く管理画面とセッション選択画面に、<mark class="hl">まだ見ていない結果の印が付く</mark></li><li><mark class="hl">入力欄で、手元の画像を添付前にプレビュー</mark>できる。会話中に出てきた画像のパスはクリックで開ける</li><li>接続先を切り替えても書きかけの入力が消えない。セッションの再開に失敗しても、記録を読んで続きを書ける</li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>Codex（コーディングを手伝うCLI＝コマンドで操作するツール）の0.167.0が公開されました。`codex agents --no-daemon` で開くエージェントの管理画面と、セッションを選ぶ画面で、<mark class="hl">まだ確認していない結果に印が付くようになりました</mark>。複数のエージェントに作業を任せているとき、どれが終わったかを見落としにくくなります。入力欄では、<mark class="hl">手元の画像を添付する前にプレビューできます</mark>。セッション選択画面からは、書きかけの入力を残したまま接続先を切り替えられます。APIキーやクラウド事業者でのサインインは「別の方法でサインイン」の中にまとめられました。修正面では、モデルの提供元を切り替えても保存済みの会話が見えなくなる問題が直りました。`Ctrl+L` で画面を消しても、それまでのやり取りは `Ctrl+T` で見返せます。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p>Codexを使っている人に関係します。とくに<mark class="hl">複数のエージェントに同時に作業させている人</mark>は、終わった作業を拾いやすくなります。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://github.com/openai/codex/releases/tag/rust-v0.167.0" target="_blank" rel="noopener">リリースノート（GitHub） ↗</a></p></section>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/trail-code.html">コーディングAIにコードの地図とチームの決めごとを渡す「Trail-code」。開発元の測定でツール呼び出し46%減</a></li><li><a href="../articles/codex-0-164-0.html">OpenAI Codex CLI 0.164.0：よく使う指示を10個の枠に保存できる「/presets」が登場</a></li><li><a href="../articles/codex-worktree-tools.html">OpenAI Codex 0.162.0、作業用の「worktree」をCodex自身が作れるように。画面上のリンクもクリック可能に</a></li></ul></nav>
+</article>
+</main>
+<footer class="site-footer-legal"><nav class="footer-nav"><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">運営者情報</a><a href="../contact.html">お問い合わせ</a></nav><p class="footer-copy">© 2026 AI速報まとめ</p></footer>
+<script src="../js/app.js?v=cc12c893" defer></script>
+</body>
+</html>
