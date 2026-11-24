@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319077760187072" crossorigin="anonymous"></script>
+<title>GitHub Copilotアプリが、ブラウザ操作とAzure DevOpsに対応（プレビュー）。社内GitHubへの接続は正式提供 — AI速報まとめ</title>
+<meta name="description" content="GitHub Copilotアプリが、==ログイン済みのブラウザでフォーム入力や情報集めを代わりに行う「ブラウザ操作」==と、==MicrosoftのAzure DevOpsに置いたコードでの作業==に対応した（どちらもプレビュー）。社内に置くGitHub Enterprise Serverへの接続は正式提供になった。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="GitHub Copilotアプリが、ブラウザ操作とAzure DevOpsに対応（プレビュー）。社内GitHubへの接続は正式提供 — AI速報まとめ">
+<meta property="og:description" content="GitHub Copilotアプリが、==ログイン済みのブラウザでフォーム入力や情報集めを代わりに行う「ブラウザ操作」==と、==MicrosoftのAzure DevOpsに置いたコードでの作業==に対応した（どちらもプレビュー）。社内に置くGitHub Enterprise Serverへの接続は正式提供になった。">
+<meta property="og:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/copilot-app-ignite-2026.html">
+<meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/copilot-app-ignite-2026.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"GitHub Copilotアプリが、ブラウザ操作とAzure DevOpsに対応（プレビュー）。社内GitHubへの接続は正式提供","datePublished":"2026-11-24","dateModified":"2026-11-24","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/copilot-app-ignite-2026.html"}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=cc12c893">
+<link rel="stylesheet" href="../css/style.css?v=cc12c893">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/github-copilot.html">GitHub Copilot</a><span class="badge">new_feature</span><span>2026-11-24</span></div>
+<h1 class="article-title">GitHub Copilotアプリが、ブラウザ操作とAzure DevOpsに対応（プレビュー）。社内GitHubへの接続は正式提供</h1>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="github-copilot" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="copilot-app-ignite-2026" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li><mark class="hl">ログイン済みのChromeやEdgeで、Copilotがフォーム入力・情報集め・作ったWebアプリの動作確認</mark>をできるようになった（プレビュー）</li><li>Azure DevOpsのリポジトリでも、ブランチ作成からプルリクエスト、レビュー指摘の修正までをアプリ内でまとめてできる（プレビュー）</li><li>社内に置くGitHub Enterprise Serverとの接続が正式提供に（アプリ1.2.0以降）</li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>GitHub Copilotアプリに、Microsoftのイベント「Ignite」に合わせた3つの更新が入りました。
+
+1つ目は<mark class="hl">ブラウザ操作（browser use）</mark>です。Chrome用の「GitHub Copilot」拡張機能を入れると、すでにログインしているChromeやEdgeで、<mark class="hl">Copilotがフォームに入力したり、Webページから情報を集めたり、作っているWebアプリを動かして不具合を確かめたり</mark>できます。作業は、ほかのタブとは分けたタブグループの中で行います。初期設定ではオフで、設定の「Computer Use」で有効にします。Copilot CLIやVS Codeなどでも使えます。
+
+2つ目は、Microsoftの開発管理サービス<mark class="hl">Azure DevOpsに置いたコードへの対応</mark>です。リポジトリ（コードの保管場所）を取り込み、AIにブランチを作らせてコードを直し、プルリクエスト（変更を取り込む前に確認する単位）を出すまでをアプリ内で行えます。レビューの指摘に「Fix」を押すとAIが直します。
+
+3つ目は、会社が自前で運用するGitHub Enterprise Server（GHES）への接続で、これまでの試験提供から正式提供になりました。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p>GitHub Copilotアプリを使う開発者に関係します。<mark class="hl">ブラウザでの定型作業や動作確認をAIに任せたい人</mark>、Azure DevOpsや社内のGitHubを使っている会社の開発者向けの更新です。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases" target="_blank" rel="noopener">公式Changelog（GitHub） ↗</a></p></section>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/github-copilot-fusion-nov-2026.html">GitHub Copilot Fusionがgithub.comとVisual Studioでも使えるように。使われるモデルも入れ替え</a></li><li><a href="../articles/copilot-jetbrains-fix-mcp-controls.html">JetBrains版GitHub Copilotが更新。エラー表示から「Fix」で直せるように、MCPの自動起動も止められる</a></li><li><a href="../articles/copilot-computer-use.html">GitHub Copilotがパソコンのアプリを操作できるように。「computer use」をプレビュー公開</a></li></ul></nav>
+</article>
+</main>
+<footer class="site-footer-legal"><nav class="footer-nav"><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">運営者情報</a><a href="../contact.html">お問い合わせ</a></nav><p class="footer-copy">© 2026 AI速報まとめ</p></footer>
+<script src="../js/app.js?v=cc12c893" defer></script>
+</body>
+</html>
