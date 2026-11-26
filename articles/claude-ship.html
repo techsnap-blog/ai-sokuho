@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2319077760187072" crossorigin="anonymous"></script>
+<title>Anthropic、プルリクエストのレビュー・修正・承認をClaudeが受け持つ「Claude Ship」をベータ公開 — AI速報まとめ</title>
+<meta name="description" content="Anthropicが、GitHubのプルリクエストを==Claudeがレビューし、指摘やテストの失敗を直し、チームの決まりで許される変更は承認まで行う「Claude Ship」==を公開した。Claude TeamとEnterpriseのプラン向けのベータ版。">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../assets/icon.svg">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#171513">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="AI速報まとめ">
+<meta property="og:title" content="Anthropic、プルリクエストのレビュー・修正・承認をClaudeが受け持つ「Claude Ship」をベータ公開 — AI速報まとめ">
+<meta property="og:description" content="Anthropicが、GitHubのプルリクエストを==Claudeがレビューし、指摘やテストの失敗を直し、チームの決まりで許される変更は承認まで行う「Claude Ship」==を公開した。Claude TeamとEnterpriseのプラン向けのベータ版。">
+<meta property="og:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://techsnap-blog.github.io/ai-sokuho/assets/og-default.png">
+<link rel="canonical" href="https://techsnap-blog.github.io/ai-sokuho/articles/claude-ship.html">
+<meta property="og:url" content="https://techsnap-blog.github.io/ai-sokuho/articles/claude-ship.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","headline":"Anthropic、プルリクエストのレビュー・修正・承認をClaudeが受け持つ「Claude Ship」をベータ公開","datePublished":"2026-11-26","dateModified":"2026-11-26","publisher":{"@type":"Organization","name":"AI速報まとめ"},"mainEntityOfPage":"https://techsnap-blog.github.io/ai-sokuho/articles/claude-ship.html"}</script>
+<link rel="stylesheet" href="../css/tokens.css?v=cc12c893">
+<link rel="stylesheet" href="../css/style.css?v=cc12c893">
+</head>
+<body data-root="../">
+<header class="site-header"><a class="brand" href="../index.html">AI速報まとめ</a></header>
+<main class="wrap">
+<article class="section article">
+<div class="article-meta"><a href="../ai/claude-code.html">Claude Code</a><span class="badge">new_feature</span><span>2026-11-26</span></div>
+<h1 class="article-title">Anthropic、プルリクエストのレビュー・修正・承認をClaudeが受け持つ「Claude Ship」をベータ公開</h1>
+<div class="article-actions"><button class="btn-save" type="button" data-toggle data-key="myai" data-id="claude-code" data-off="My AIに追加" data-on="My AIに追加済み" aria-pressed="false">My AIに追加</button><button class="btn-save" type="button" data-toggle data-key="saved" data-id="claude-ship" data-off="保存" data-on="保存済み" aria-pressed="false">保存</button></div>
+<section class="article-block"><h2>30秒でわかる</h2><ul class="tldr"><li><mark class="hl">プルリクエストのレビュー、修正、承認までをClaudeが受け持つ</mark>「<a href="https://claude.com/product/claude-ship" target="_blank" rel="noopener">Claude Ship ↗</a>」が登場</li><li>Claude Codeで<mark class="hl">「/ship」と打つと、変更のpushからプルリクエスト作成、レビュー、指摘への対応まで</mark>を進める</li><li>Claude TeamとEnterpriseのプラン向けのベータ版。使った分だけの従量課金</li></ul></section>
+<section class="article-block"><h2>何が変わった</h2><p>Anthropicが、GitHubでのプルリクエスト（コードの変更を本体に取り込む前に確認する単位）を手伝う<a href="https://claude.com/product/claude-ship" target="_blank" rel="noopener">Claude Ship ↗</a>を公開しました。3つの役割に分かれています。
+
+1つ目の「Code Review」は、プルリクエストのレビューです。リポジトリ（コードの保管場所）ごとに、軽め・標準・念入りの3段階から深さを選べます。2つ目の「PR Steward」（ベータ）は、<mark class="hl">自動チェック（CI）の失敗や、変更どうしの食い違い、レビューの指摘に対応して直します</mark>。直したあとは、何を変えたかをコメントで残します。ただし、承認と取り込み（マージ）はチームに任せる作りです。3つ目の「Claude Approvals」（ベータ）は、<mark class="hl">チームが書いた承認ルールに沿って、決まった種類の変更なら承認</mark>し、そうでなければ人の承認を求めます。
+
+開発者は、Claude Codeで<mark class="hl">準備のできた変更に「/ship」を実行すると、Claudeがpushし、プルリクエストを開き、レビューして、指摘や失敗したチェックへの対応まで進めます</mark>。管理者がリポジトリ単位でClaude Shipを有効にする使い方もあり、Claude Codeを使っていなくても利用できます。</p></section>
+<section class="article-block"><h2>誰に関係する</h2><p><mark class="hl">GitHubで、チームでコードを管理している開発者</mark>に関係します。使えるのは、公式に挙がっているClaude TeamとEnterpriseのプランです。</p></section>
+<section class="article-block"><h2>公式情報</h2><p><a class="btn-official" href="https://claude.com/resources/articles/introducing-claude-ship" target="_blank" rel="noopener">公式発表（Claude） ↗</a></p></section>
+<nav class="article-block related" aria-label="関連記事"><h2>関連記事</h2><ul class="related-list"><li><a href="../articles/opencodex.html">CodexやClaude Codeで、GeminiやDeepSeekなど好きな会社のモデルを使えるようにする「opencodex」</a></li><li><a href="../articles/paseo.html">Claude CodeやCodexなど複数のコーディングAIを、PCとスマホから同時に動かして管理する「Paseo」</a></li><li><a href="../articles/t3code.html">Claude CodeやCodexをスマホからも操作できる「T3 Code」。無料のオープンソース</a></li></ul></nav>
+</article>
+</main>
+<footer class="site-footer-legal"><nav class="footer-nav"><a href="../privacy.html">プライバシーポリシー</a><a href="../about.html">運営者情報</a><a href="../contact.html">お問い合わせ</a></nav><p class="footer-copy">© 2026 AI速報まとめ</p></footer>
+<script src="../js/app.js?v=cc12c893" defer></script>
+</body>
+</html>
